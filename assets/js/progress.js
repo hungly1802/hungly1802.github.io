@@ -21,7 +21,7 @@ $(function () {
         counter.textAlign = 'center';
         counter.fillStyle= "#93268f"
 
-        counter.font = "40px monospace";    //set font size and face
+        counter.font = "40px Duepuntozero-number";    //set font size and face
 
         counter.fillText(no+'%',75,90);       //fillText(text,x,y);
 
@@ -32,7 +32,7 @@ $(function () {
 
         // now add condition
 
-        if(no >= 80)
+        if(no >= 97)
         {
             clearTimeout(fill);     //fill is a variable that call the function fillcounter()
         }
@@ -65,7 +65,7 @@ $(function () {
         counter.textAlign = 'center';
         counter.fillStyle= "#93268f"
 
-        counter.font = "40px monospace";    //set font size and face
+        counter.font = "40px Duepuntozero-number";    //set font size and face
 
         counter.fillText(no+'%',75,90);       //fillText(text,x,y);
 
@@ -76,7 +76,7 @@ $(function () {
 
         // now add condition
 
-        if(no >= 85)
+        if(no >=98)
         {
             clearTimeout(fill);     //fill is a variable that call the function fillcounter()
         }
@@ -109,7 +109,7 @@ $(function () {
         counter.textAlign = 'center';
         counter.fillStyle= "#93268f"
 
-        counter.font = "40px monospace";    //set font size and face
+        counter.font = "40px Duepuntozero-number";    //set font size and face
 
         counter.fillText(no+'%',75,90);       //fillText(text,x,y);
 
@@ -120,7 +120,7 @@ $(function () {
 
         // now add condition
 
-        if(no >= 90)
+        if(no >= 99)
         {
             clearTimeout(fill);     //fill is a variable that call the function fillcounter()
         }
