@@ -1,549 +1,1096 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyAuris</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/5dbad8e1be.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/carousel.css">
-    <link rel="stylesheet" href="assets/css/progress.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <title>Medical Guide</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/myauris/favicon-medical.png">
+
+
+    <!--main file-->
+    <link href="css/medical-guide.css" rel="stylesheet" type="text/css">
+
+    <!--Medical Guide Icons-->
+    <link href="fonts/medical-guide-icons.css" rel="stylesheet" type="text/css">
+
+    <!-- Default Color-->
+    <link href="css/default-color.css" rel="stylesheet" id="color" type="text/css">
+
+    <!--bootstrap-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+    <!--Dropmenu-->
+    <link href="css/dropmenu.css" rel="stylesheet" type="text/css">
+
+    <!--Sticky Header-->
+    <link href="css/sticky-header.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/hover.css">
+
+    <!--revolution-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/settings.css" rel="stylesheet" type="text/css">
+    <link href="css/extralayers.css" rel="stylesheet" type="text/css">
+
+    <!--Accordion-->
+    <link href="css/accordion.css" rel="stylesheet" type="text/css">
+
+    <!--tabs-->
+    <link href="css/tabs.css" rel="stylesheet" type="text/css">
+
+    <!--Owl Carousel-->
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+
+    <!-- Mobile Menu -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" type="text/css" href="css/demo.css"/>
+
+    <!--PreLoader-->
+    <link href="css/loader.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
-<body>
-<header>
-    <div class="container">
-        <div class="header-top">
-            <ul>
-                <li>
-                    <i class="fas fa-phone-alt"></i>
-                    <strong>Hotline: </strong>
-                    <span>(+84) 901 95 88 68</span>
-                </li>
-                <li>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <strong>Địa chỉ: </strong>
-                    <span>11 Bis, Nguyễn Gia Thiều, Quận 3,TP HCM</span>
-                </li>
-                <li>
-                    <i class="far fa-clock"></i>
-                    <strong>Mon - Sat: </strong>
-                    <span>8:00 AM - 7:00 PM</span>
-                </li>
-            </ul>
+
+<body data-spy="scroll" data-target="#scrollspy-nav" data-offset="110">
+
+<div id="wrap">
+
+    <!--Start PreLoader-->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+        <div class="loader">
+            <h1>Loading...</h1>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <hr>
-        <div class="header-menu">
-            <nav class="navbar navbar-expand-lg navbar-light ">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo-myauris.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    </div>
+    <!--End PreLoader-->
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Giới Thiệu</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dịch Vụ
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Khách Hàng
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Kiến Thức
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Tin Tức</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Liên Hệ</a>
-                        </li>
 
-                    </ul>
+    <!--Start Top Bar-->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-5">
+                    <span class="color1">MY AURIS </span>
+                    <span> - Phù phép cho hàm răng trắng sáng !</span>
+                </div>
+
+                <div class="col-md-7">
+
+
+                    <div class="get-touch">
+
+                        <ul>
+                            <li><a><i class="icon-phone4"></i> (+84) 901 95 88 68</a></li>
+                            <li><a href="#."><i class="icon-mail"></i>contact@myauris.vn</a></li>
+                        </ul>
+
+                        <ul class="social-icons">
+                            <li><a href="#." class="fb"><i class="icon icon-euro"></i> </a></li>
+                            <li><a href="#." class="tw"><i class="icon icon-yen"></i> </a></li>
+                            <li><a href="#." class="gp"><i class="icon icon-caddieshoppingstreamline"></i> </a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Top Bar End-->
+
+
+    <!--Start Header-->
+
+    <header class="header">
+        <div class="container">
+
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <a href="http://myauris.vn/" class="logo"><img src="images/myauris/logo-myauris.png" alt=""></a>
+                </div>
+
+                <div class="col-md-9">
+
+
+                    <nav class="menu-2 scrollspy-nav" id="navbar-example2">
+                        <ul class="nav wtf-menu ">
+                            <li class="parent"><a href="#main-title">GIỚI THIỆU</a>
+
+                            </li>
+
+                            <li class="parent"><a href="#main-title2">QUÁ TRÌNH</a>
+
+                            </li>
+
+                            <li class="parent"><a href="#main-title3">KẾT QUẢ</a>
+
+                            </li>
+
+                            <!--                                <li><a href="#main-title4">CÂU HỎI</a></li>-->
+
+                            <li class="parent"><a href="#main-title5">LIÊN HỆ</a>
+
+
+                            </li>
+
+                        </ul>
+                    </nav>
 
                 </div>
+
+            </div>
+
+
+        </div>
+    </header>
+    <!--End Header-->
+
+
+    <!-- Mobile Menu Start -->
+    <div class="container">
+        <div id="page">
+            <header class="header">
+                <a href="#menu"></a>
+
+            </header>
+
+            <nav id="menu">
+                <ul>
+                    <li class="select"><a href="#main-title">Giới thiệu</a>
+
+                    </li>
+                    <li><a href="#main-title2">Quá Trình</a>
+
+                    </li>
+                    <li><a href="#main-title3">Kết Quả</a>
+
+                    </li>
+
+                    <li><a href="#main-title4">Câu Hỏi</a>
+
+
+                    </li>
+
+
+                    <li><a href="#main-title5">Liên Hệ</a>
+
+                    </li>
+
+
+                </ul>
+
+
             </nav>
         </div>
     </div>
-</header>
-<section>
-    <div class="banner position-relative">
-        <img src="assets/img/banner.jpg" alt="">
-        <div class="position-absolute">
+    <!-- Mobile Menu End -->
+
+
+    <div class="container">
+        <div class="time-table-sec">
+            <ul id="accordion2" class="accordion2">
+                <li>
+                    <ul class="submenu time-table">
+                        <li class="tit">
+                            <h5>Working Time</h5>
+                        </li>
+                        <li><span class="day">Monday - Friday</span> <span class="divider">-</span> <span
+                                class="time">8.00 - 16.00</span></li>
+                        <li><span class="day">Saturday</span> <span class="divider">-</span> <span class="time">9.15
+                                    - 17.00</span></li>
+                        <li><span class="day">Sunday</span> <span class="divider">-</span> <span class="time">9.45 -
+                                    15.00</span></li>
+                    </ul>
+                    <div class="link"><img class="time-tab" src="images/myauris/timetable-menu.png" alt=""></div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--Start Banner-->
+
+    <div class="tp-banner-container ">
+        <!--            <div class="bgblack"></div>-->
+        <div class="box-introductions animated fadeIn infinite count1">
+            <h1>TÊN KHÁCH HÀNG</h1>
+            <h4>Phủ răng sứ</h4>
+            <p>Độc quyền công nghệ Nano 5S ứng dụng trong việc chế tác phôi sứ.</p>
+            <!--                <button class="hvr-back-pulse">READ MORE</button>-->
+        </div>
+
+        <div class="tp-banner animated pulse infinite time ">
+
+
+        </div>
+    </div>
+
+    <!--End Banner-->
+
+    <!--Start Content-->
+    <div class="content" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <!--Start Welcome-->
+        <div class="welcome wow fadeInDown">
             <div class="container">
-                <div class="banner-content">
 
-
-                    <h3>Tìm Lại Nụ Cười với</h3>
-                    <h1>MY AURIS</h1>
-                    <p>Integer quidem metus aperiam ante dolor quo excepturi posuere consequatur, sagittis sapiente,
-                        autem
-                        ante. Taciti odio, similique semper auctor qui ab nullam consequuntur gravida. Vel, ab iaculis
-                        ut
-                        aliquip! Wisi</p>
-                    <div>
-                        <button>Xem Thêm</button>
-
+                <div class="row mypd5">
+                    <div class="col-md-12" style="text-align: center;">
+                        <div class="main-title" id="main-title">
+                            <h2>Hành trình tìm lại chiếc răng khểnh</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-    </div>
-</section>
-<section id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-7">
-                <img src="assets/img/about.jpg" alt="">
-            </div>
-            <div class="col-5">
-                <h3>Welcome to</h3>
-                <h1>My Auris</h1>
-                <p>Facilisi sociis suspendisse adipisci mus sunt rerum pulvinar, enim? Aliqua, animi minima. Culpa quos
-                    nulla, tempor leo mus quasi facere. Consectetur aptent, excepteur duis aliquid adipiscing augue id,
-                    aptent cupiditate duis reiciendis facilisis adipisci possimus, molestias netus!</p>
-                <p>Facilisi sociis suspendisse adipisci mus sunt rerum pulvinar, enim? Aliqua, animi minima. Culpa quos
-                    nulla, tempor leo mus quasi facere.</p>
-                <div>
-                    <button>Xem Thêm</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="appoitement">
-    <div class="container">
-        <h1 class="text-center mb-5 text-uppercase">My Auris dành điều tốt nhất cho bạn</h1>
+                <div id="tabbed-nav">
+                    <ul>
+                        <li><a>Giới thiệu</a></li>
+                        <li><a>Khuyết điểm</a></li>
+                        <li><a>Hành trình</a></li>
+                        <li><a>Video chia sẻ</a></li>
+                    </ul>
 
-        <div class="row">
-            <div class="col-4">
-                <img src="assets/img/appoitement.jpg" alt="">
-                <h5>Đội ngũ nhân viên chuyên nghiệp</h5>
-                <p>Integer quidem metus aperiam ante dolor quo excepturi posuere consequatur, sagittis sapiente, autem
-                    ante.</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/img/appoitement.jpg" alt="">
-                <h5>Đội ngũ nhân viên chuyên nghiệp</h5>
-                <p>Integer quidem metus aperiam ante dolor quo excepturi posuere consequatur, sagittis sapiente, autem
-                    ante.</p>
-            </div>
-            <div class="text-center col-4">
-                <form action="">
-                    <p>Đặt lịch miễn phí</p>
-                    <input type="text" placeholder="Họ và tên">
-                    <input type="text" placeholder="Số điện thoại">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Yêu cầu"></textarea>
-                    <button>Đặt lịch ngay</button>
-                </form>
-            </div>
 
-        </div>
-        <div class="row f-box mt-5">
-            <div class="col-3 text-center">
-                <div>
-                    <img src="assets/img/1.png" alt="">
-                    <h4 class="color1">Cải Thiện</h4>
-                    <p>Integer quidem metus aperiam ante dolor quo excepturi posuere consequatur.</p>
-                </div>
-            </div>
-            <div class="col-3 text-center">
-                <div>
-                    <img src="assets/img/2.png" alt="">
-                    <h4 class="color2">Cải Thiện</h4>
-                    <p>Integer quidem metus aperiam ante dolor quo excepturi posuere consequatur.</p>
-                </div>
-            </div>
-            <div class="col-3 text-center">
-                <div>
-                    <img src="assets/img/3.png" alt="">
-                    <h4 class="color3">Cải Thiện</h4>
-                    <p>Integer quidem metus aperiam ante dolor quo excepturi posuere consequatur.</p>
-                </div>
-            </div>
-            <div class="col-3 text-center">
-                <div>
-                    <img src="assets/img/4.png" alt="">
-                    <h4 class="color4">Cải Thiện</h4>
-                    <p>Integer quidem metus aperiam ante dolor quo excepturi posuere consequatur.</p>
-                </div>
-            </div>
-        </div>
-</section>
-<div class="videoWrapper">
-    <!-- Copy & Pasted from YouTube -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/RVYkFl7WLfA" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<section id="celeb">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8">
-                <h1>NGHỆ SĨ NÓI VỀ CHÚNG TÔI</h1>
-                <div class="arrow_box" id="box1">
-                    Interdum eaque nullam? Vivamus exercitation exercitation, quasi, eget hendrerit interdum itaque consectetur voluptates distinctio nisi delectus
-                </div>
-                <div class="arrow_box d-none" id="box2"></div>
-                <div class="arrow_box d-none" id="box3"></div>
-                <div class="arrow_box d-none" id="box4"></div>
-                <div class="arrow_box d-none" id="box5"></div>
-                <div class="arrow_box d-none" id="box6"></div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div id="Carousel" class="carousel slide">
-                            <!--                            <ol class="carousel-indicators">-->
-                            <!--                                <li data-target="#Carousel" data-slide-to="0" class="active"></li>-->
-                            <!--                                <li data-target="#Carousel" data-slide-to="1"></li>-->
-                            <!--                                <li data-target="#Carousel" data-slide-to="2"></li>-->
-                            <!--                            </ol>-->
-                            <!-- Carousel items -->
-                            <div class="carousel-inner">
-                                <div class="item active carousel-item">
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <div>
-                                                <img
-                                                        src="assets/img/celeb.jpg" alt="Image"
-                                                        style="max-width:100%;">
-                                                <h4>Tên nổi tiếng</h4>
-                                                <span>Diễn viên</span>
-                                            </div>
+                    <div>
 
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div>
-                                                <img
-                                                        src="assets/img/celeb.jpg" alt="Image" style="max-width:100%;">
-                                                <h4>Tên nổi tiếng</h4>
-                                                <span>Diễn viên</span>
-                                            </div>
+                        <div>
 
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div>
-                                                <img
-                                                        src="assets/img/celeb.jpg" alt="Image" style="max-width:100%;">
-                                                <h4>Tên nổi tiếng</h4>
-                                                <span>Diễn viên</span>
-                                            </div>
+                            <div class="row">
 
-                                        </div>
-
+                                <div class="col-md-6">
+                                    <div class="welcome-serv-img ">
+                                        <img src="images/myauris/do-quynh-thi-quoc-y.png" alt="">
                                     </div>
-                                    <!--.row-->
                                 </div>
-                                <!--.item-->
-                                <div class="item carousel-item">
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <div>
-                                                <img
-                                                        src="assets/img/celeb.jpg" alt="Image" style="max-width:100%;">
-                                                <h4>Tên nổi tiếng</h4>
-                                                <span>Diễn viên</span>
-                                            </div>
 
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div>
-                                                <img
-                                                        src="assets/img/celeb.jpg" alt="Image" style="max-width:100%;">
-                                                <h4>Tên nổi tiếng</h4>
-                                                <span>Diễn viên</span>
-                                            </div>
+                                <div class="col-md-6">
 
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div>
-                                                <img
-                                                        src="assets/img/celeb.jpg" alt="Image" style="max-width:100%;">
-                                                <h4>Tên nổi tiếng</h4>
-                                                <span>Diễn viên</span>
-                                            </div>
+                                    <div class="detail">
+                                        <h4>ĐỖ QUỲNH THỊ QUỐC Ý</h4>
+                                        <p>Tetracycline là một loại kháng sinh được sử dụng rộng rãi trong những năm
+                                            80, 90 do giá thành rẻ. Tuy nhiên, tác dụng phụ để lại là hàm răng xỉn
+                                            màu, thiếu hụt men răng, gây biến dạng răng.
 
-                                        </div>
+                                            Với khách hàng Đỗ Quỳnh Thị Quốc Ý, Tetracyline trở thành nỗi ám ảnh
+                                            khiến chị chẳng dám nở nụ cười. Nhưng chị đã thay đổi như một phép màu
+                                            tại Viện may đo nụ cười My Auris.
+                                        </p>
 
                                     </div>
-                                    <!--.row-->
+
                                 </div>
 
                             </div>
-                            <!--.carousel-inner-->
-                            <!--                            <a data-slide="prev" href="#Carousel" class="left carousel-control">&#x2039;</a>-->
-                            <!--                            <a data-slide="next" href="#Carousel" class="right carousel-control">&#x203A;</a>-->
+
+
                         </div>
-                        <!--.Carousel-->
+
+                        <div>
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="welcome-serv-img">
+                                        <img src="images/myauris/do-quynh-thi-quoc-y.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <div class="detail">
+                                        <h4>Một khuyết điểm khiến cho mọi cô gái không tự tin</h4>
+                                        <p>Với mọi cô gái thì xinh đẹp không chỉ đến từ khuôn mặt mà còn đến từ nụ
+                                            cười. Vậy mà một khuyết điểm từ bé đã khiến Quốc Ý không có được một nụ
+                                            cười trọn vẹn để bây giờ khi trưởng thành thì đó vẫn là một thứ gì đó ám
+                                            ảnh cô. Nỗi lo đó là răng nhiễm Tetracycline. </p>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div>
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="welcome-serv-img">
+                                        <img src="images/myauris/do-quynh-thi-quoc-y.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <div class="detail">
+                                        <h4>Hành trình giúp cô tìm lại nụ cười mơ ước bấy lâu</h4>
+                                        <p>Một sự thay đổi lớn đã đến với cô sau khi Quốc Ý quyết tâm đi tìm sự thay
+                                            đổi cho nụ cười của mình. Nụ cười rạng rỡ và tươi mới đã không làm cô
+                                            thất vọng, đặc biệt hơn nụ cười đó đã giúp cô tự tin hơn sải bước cùng
+                                            chồng mình trong ngày lễ trọng đại.</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div>
+
+                            <div class="row">
+
+                                <div class="col-md-6 ">
+                                    <div class="welcome-serv-img embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"
+                                                src="https://www.youtube.com/embed/4YzkF-2ZgbI" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <div class="detail">
+                                        <h4>Latest Technology</h4>
+                                        <p>Chia sẻ của khách hàng có răng nhiễm Tetracycline
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!--End Welcome-->
+
+
+        <!--Start Specialists-->
+        <div class="meet-specialists dark-back wow fadeInDown">
+            <div class="container">
+
+
+                <div class="row mypd5">
+                    <div class="col-md-12 ">
+                        <div class="main-title" id="main-title2">
+                            <h2><span>Quá Trình Điều Trị tại </span>MyAuris</h2>
+                            <!--                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>-->
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="demo">
+                    <div class="container">
+                        <div class="row">
+                            <div class="span12">
+
+                                <div id="owl-demo4" class="owl-carousel">
+
+                                    <div class="post item">
+
+                                        <div class="gallery-sec">
+                                            <div class="image-hover img-layer-slide-left-right">
+                                                <img src="images/myauris/quatrinh1.jpg" alt="">
+<!--                                                <div class="layer">-->
+<!--                                                    <a href="#."><i class="icon-euro"></i></a>-->
+<!--                                                    <a href="#."><i class="icon-yen"></i></a>-->
+<!--                                                    <a href="#."><i class="icon-caddieshoppingstreamline"></i></a>-->
+<!--                                                </div>-->
+                                            </div>
+                                        </div>
+
+                                        <div class="detail">
+                                            <h6>Hướng điều trị</h6>
+                                            <!--                                                <span>Outpatient Surgery</span>-->
+                                            <p class="height-css">- Răng nhiễm Tetracycline, xỉn màu nâu, mất thẩm
+                                                mỹ <br/>
+                                                - Thiếu sản men răng<br/>
+                                                - Răng biến dạng</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="post item">
+
+                                        <div class="gallery-sec">
+                                            <div class="image-hover img-layer-slide-left-right">
+                                                <img src="images/myauris/quatrinh2.jpg" alt="">
+<!--                                                <div class="layer">-->
+<!--                                                    <a href="#."><i class="icon-euro"></i></a>-->
+<!--                                                    <a href="#."><i class="icon-yen"></i></a>-->
+<!--                                                    <a href="#."><i class="icon-caddieshoppingstreamline"></i></a>-->
+<!--                                                </div>-->
+                                            </div>
+                                        </div>
+
+                                        <div class="detail">
+                                            <h6>Hướng điều trị</h6>
+                                            <!--                                                <span>Cardiologist</span>-->
+                                            <p class="height-css">- Phủ răng sứ can thiệp 0,6 – 0,8mm mỗi răng<br/>
+                                                - Công nghệ tiên tiến không mài nhỏ răng, không lấy tủy, an toàn
+                                                sinh lý<br/>
+                                                - Chọn form răng Oval tự nhiên, thay đổi hình thể răng<br/>
+                                                - Điều chỉnh cung cười chuẩn</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="post item">
+
+                                        <div class="gallery-sec">
+                                            <div class="image-hover img-layer-slide-left-right">
+                                                <img src="images/myauris/quatrinh3.jpg" alt="">
+<!--                                                <div class="layer">-->
+<!--                                                    <a href="#."><i class="icon-euro"></i></a>-->
+<!--                                                    <a href="#."><i class="icon-yen"></i></a>-->
+<!--                                                    <a href="#."><i class="icon-caddieshoppingstreamline"></i></a>-->
+<!--                                                </div>-->
+                                            </div>
+                                        </div>
+
+                                        <div class="detail">
+                                            <h6>Hướng điều trị</h6>
+                                            <!--                                                <span>Heart Specialist</span>-->
+                                            <p class="height-css">Chỉ 2 lần thăm khám, nhanh chóng, đã sở hữu ngay
+                                                nụ cười như ý. Nụ
+                                                cười mới với màu sắc trắng trong tự nhiên như răng thật. Cung cười
+                                                tỷ lệ chuẩn vàng với răng đều tăm tắp, phù hợp với gương mặt, Nhân
+                                                tướng học phương Đông.</p>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 d-flex align-items-center justify-content-center">
-                <div class="embed-responsive embed-responsive-1by1">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                            allowfullscreen></iframe>
+        </div>
+        <!--End Specialists-->
+
+
+        <!--Start Testimonials-->
+        <div class="patients-testi dark-testi">
+            <div class="container">
+
+                <div class="row mypd3">
+                    <div class="col-md-12">
+                        <div class="main-title main-title2" id="main-title3">
+                            <h2>Quá Trình Thay Đổi</h2>
+                            <span>Hãy xem và cảm nhận sự thay đổi trước và sau khi làm răng tại My Auris</span>
+                        </div>
+                    </div>
                 </div>
+                <div class="testimonials-slide">
+                    <section id="slider">
+                        <input type="radio" name="slider" id="s1">
+                        <input type="radio" name="slider" id="s2">
+                        <input type="radio" name="slider" id="s3" checked>
+                        <input type="radio" name="slider" id="s4">
+                        <input type="radio" name="slider" id="s5">
+                        <label for="s1" id="slide1"></label>
+                        <label for="s2" id="slide2"></label>
+                        <label for="s3" id="slide3"></label>
+                        <label for="s4" id="slide4"></label>
+                        <label for="s5" id="slide5"></label>
+                    </section>
+                </div>
+                <!--                    <div id="testimonials">-->
+                <!--                        <div class="container">-->
+                <!--                            <div class="row">-->
+
+                <!--                                <div class="col-md-12">-->
+                <!--                                    <div class="span12">-->
+
+                <!--                                        <div id="owl-demo2" class="owl-carousel">-->
+
+                <!--                                            <div class="testi-sec">-->
+
+
+                <!--                                                <img src="images/myauris/1-1.png" alt="">-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <span class="name">Elebana Front</span>-->
+                <!--                                                <span class="patient">Heart Patient</span>-->
+
+
+                <!--                                            </div>-->
+                <!--                                            <div class="testi-sec">-->
+
+
+                <!--                                                <img src="images/myauris//2-1.png" alt="">-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <span class="name">Johny Bravo</span>-->
+                <!--                                                <span class="patient">Hair Patient</span>-->
+
+
+                <!--                                            </div>-->
+                <!--                                            <div class="testi-sec">-->
+                <!--                                                <img src="images/myauris/3-1.png" alt="">-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <span class="name">Rubica Noi</span>-->
+                <!--                                                <span class="patient">Skin Patient</span>-->
+
+
+                <!--                                            </div>-->
+                <!--                                            <div class="testi-sec">-->
+                <!--                                                <img src="images/myauris/4-1.png" alt="">-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <span class="name">Rubica Noi</span>-->
+                <!--                                                <span class="patient">Skin Patient</span>-->
+
+
+                <!--                                            </div>-->
+                <!--                                            <div class="testi-sec">-->
+                <!--                                                <img src="images/myauris/5-1.png" alt="">-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+
+                <!--                                                <span class="name">Rubica Noi</span>-->
+                <!--                                                <span class="patient">Skin Patient</span>-->
+
+
+                <!--                                            </div>-->
+                <!--                                            <div class="testi-sec">-->
+                <!--                                                <img src="images/myauris/6-1.png" alt="">-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+                <!--                                                <div class="height10"></div>-->
+
+                <!--                                                <span class="name">Rubica Noi</span>-->
+                <!--                                                <span class="patient">Skin Patient</span>-->
+
+
+                <!--                                            </div>-->
+
+
+                <!--                                        </div>-->
+
+                <!--                                    </div>-->
+                <!--                                </div>-->
+
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+
             </div>
         </div>
+
+
+        <!--End Testimonials-->
+
     </div>
-</section>
-<section id="custom">
-    <div class="container">
-        <div class="custom-content">
-            <h1>Khách hàng đã đến với myauris</h1>
-<!--            <span>"</span>-->
-            <img src="assets/img/daunhay.png" alt="">
-            <i>Accusantium ex irure morbi irure torquent, bibendum eum. Vel. Irure assumenda et sociosqu, dolorum?
-                Dictumst
-                eaque? </i>
-        </div>
+    <!--End Content-->
+    <!--        <section id="faq" class="template_faq">-->
+    <!--            <div class="container wow fadeInDown">-->
+    <!--                <div class="row mypd4">-->
+    <!--                    <div class="col-12 section-title text-center" id="main-title4">-->
+    <!--                        <h2>Câu Hỏi Thường Gặp</h2>-->
+    <!--                        &lt;!&ndash; <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> &ndash;&gt;-->
+    <!--                    </div>-->
+    <!--                    <div class="row">-->
+    <!--                        <div class="col-md-6 col-sm-6 col-xs-12">-->
+    <!--                            <div class="faq_desc">-->
+    <!--                                <p class="question">Q. Cho mình hỏi chi phí phủ răng sứ bên mình là bao nhiêu ạ?</p>-->
+    <!--                                <p class="ans">Giá phủ răng sứ tùy vào loại sứ khách lựa chọn, dao động theo chất liệu-->
+    <!--                                    sứ-->
+    <!--                                    bạn chọn.</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                        <div class="col-md-6 col-sm-6 col-xs-12">-->
+    <!--                            <div class="faq_desc">-->
+    <!--                                <p class="question">Q. Cho mình hỏi phủ răng sứ có mất thời gian nhiều không?</p>-->
+    <!--                                <p class="ans">Chỉ mất 2 lần đến và mỗi lần cách nhau từ 3 – 4 ngày.</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
 
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="custom-box">
-                    <div>
-                        <img src="assets/img/custom.jpg" alt="">
-                        <h4>Nguyễn Thị Tuyết Hạnh</h4>
-                        <p>26 tuổi</p>
-                        <span>Đánh Giá:
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i>
-                    </span>
-                    </div>
+    <!--                    &lt;!&ndash;- END COL &ndash;&gt;-->
+    <!--                    <div class="row">-->
+    <!--                        <div class="col-md-6 col-sm-6 col-xs-12">-->
+    <!--                            <div class="faq_desc">-->
+    <!--                                <p class="question">Q. Ngoài phủ răng thì ở đây có niềng răng không?</p>-->
+    <!--                                <p class="ans">Chỉ áp dụng phủ răng sứ, để đảm bảo tối ưu thời gian, cải thiện thẩm mỹ-->
+    <!--                                    nhanh-->
+    <!--                                    chóng và an toàn cho sức khỏe.</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                        &lt;!&ndash;- END COL &ndash;&gt;-->
 
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="custom-box">
-                    <div>
-                        <img src="assets/img/custom.jpg" alt="">
-                        <h4>Nguyễn Thị Tuyết Hạnh</h4>
-                        <p>26 tuổi</p>
-                        <span>Đánh Giá:
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i>
-                    </span>
-                    </div>
+    <!--                        <div class="col-md-6 col-sm-6 col-xs-12">-->
+    <!--                            <div class="faq_desc">-->
+    <!--                                <p class="question">Q. Vậy có nghĩa là mình xem được hình ảnh giả thuyết của mình sau-->
+    <!--                                    khi-->
+    <!--                                    làm răng ạ? Mình được kế 1 hình hay có nhiều hình để mình chọn không ạ?</p>-->
+    <!--                                <p class="ans">Thiết kế nụ cười sẽ giúp khách hàng hình dung được nụ cười của mình sau-->
+    <!--                                    khi-->
+    <!--                                    phủ răng sứ. Khách hàng hoàn toàn có thể lựa chọn nhiều form răng để phù hợp với-->
+    <!--                                    gương-->
+    <!--                                    mặt.</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
 
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="custom-box">
-                    <div>
-                        <img src="assets/img/custom.jpg" alt="">
-                        <h4>Nguyễn Thị Tuyết Hạnh</h4>
-                        <p>26 tuổi</p>
-                        <span>Đánh Giá:
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i>
-                    </span>
-                    </div>
+    <!--                    &lt;!&ndash;- END COL &ndash;&gt;-->
 
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="custom-box">
-                    <div>
-                        <img src="assets/img/custom.jpg" alt="">
-                        <h4>Nguyễn Thị Tuyết Hạnh</h4>
-                        <p>26 tuổi</p>
-                        <span>Đánh Giá:
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i>
-                    </span>
-                    </div>
+    <!--                    &lt;!&ndash;- END COL &ndash;&gt;-->
+    <!--                    <div class="row">-->
+    <!--                        <div class="col-md-6 col-sm-6 col-xs-12">-->
+    <!--                            <div class="faq_desc">-->
+    <!--                                <p class="question">Q. Thiết kế nụ cười như vậy có mất phí không?</p>-->
+    <!--                                <p class="ans">Thiết kế nụ cười nằm trong quy trình thăm khám của tất cả các khách hàng-->
+    <!--                                    khi-->
+    <!--                                    đến với My Auris.</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                        &lt;!&ndash;- END COL &ndash;&gt;-->
+    <!--                        <div class="col-md-6 col-sm-6 col-xs-12">-->
+    <!--                            <div class="faq_desc">-->
+    <!--                                <p class="question">Q. Răng hô, móm có thể phủ răng được không?</p>-->
+    <!--                                <p class="ans">Phương pháp phủ sứ giải quyết tất cả các tình trạng răng miệng gặp phải.-->
+    <!--                                </p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
 
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="progress">
-    <img src="assets/img/banner3.jpg" alt="">
-    <div class="row">
-        <div class="col-md-4 ">
-            <div class="progress1">
-                <div>
-                    <canvas height="150" width="150" id="counter"></canvas>
-                    <div id="circle1"></div>
-                    <div id="shadowring"></div>
-                    <div id="circle2"></div>
-                </div>
-
-                <h3>Thái độ </h3>
-            </div>
+    <!--                    &lt;!&ndash;- END COL &ndash;&gt;-->
+    <!--                </div>-->
+    <!--                &lt;!&ndash;- END ROW &ndash;&gt;-->
+    <!--            </div>-->
+    <!--            &lt;!&ndash;- END CONTAINER &ndash;&gt;-->
+    <!--        </section>-->
 
 
-        </div>
-        <div class="col-md-4">
-            <div class="progress1">
-                <div>
-                    <canvas height="150" width="150" id="counter1"></canvas>
-                    <div id="circle1"></div>
-                    <div id="shadowring"></div>
-                    <div id="circle2"></div>
-                </div>
-
-                <h3>Thái độ </h3>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="progress1">
-                <div>
-                    <canvas height="150" width="150" id="counter2"></canvas>
-                    <div id="circle1"></div>
-                    <div id="shadowring"></div>
-                    <div id="circle2"></div>
-                </div>
-
-                <h3>Thái độ </h3>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-<section id="newt">
-    <div class="container">
-        <h1 class="text-center">Tin Tức</h1>
-        <div class="owl-carousel owl-theme">
-            <div>
-                <img src="assets/img/card.jpg" alt="">
-                <h5>Đội ngũ nhân viên chuyên nghiệp</h5>
-                <p>Quis fusce! Elementum luctus maxime repudiandae! Vel curae, harum vulputate nisl tempora, elit, vitae
-                    minus quis rhoncus, aenean. Totam nobis inventore earum incididunt fringilla</p>
-                <span>2 ngày trước</span>
-            </div>
-            <div>
-                <img src="assets/img/card.jpg" alt="">
-                <h5>Đội ngũ nhân viên chuyên nghiệp</h5>
-                <p>Quis fusce! Elementum luctus maxime repudiandae! Vel curae, harum vulputate nisl tempora, elit, vitae
-                    minus quis rhoncus, aenean. Totam nobis inventore earum incididunt fringilla</p>
-                <span>2 ngày trước</span>
-            </div>
-            <div>
-                <img src="assets/img/card.jpg" alt="">
-                <h5>Đội ngũ nhân viên chuyên nghiệp</h5>
-                <p>Quis fusce! Elementum luctus maxime repudiandae! Vel curae, harum vulputate nisl tempora, elit, vitae
-                    minus quis rhoncus, aenean. Totam nobis inventore earum incididunt fringilla</p>
-                <span>2 ngày trước</span>
-            </div>
-
-
-        </div>
-        <div class="newt-btn">
-            <button>Đọc thêm</button>
-        </div>
-    </div>
-
-</section>
-<section id="contact">
-    <div class="container">
-        <div class="contact-content">
+    <!--Start Footer-->
+    <footer class="footer" id="footer">
+        <div class="container wow zoomIn">
             <div class="row">
-                <div class="col-md-5 d-flex flex-column justify-content-between align-items-center contact-video">
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" width="560" height="315"
-                                src="https://www.youtube.com/embed/9DCdCoQ49u8" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                    </div>
-                    <p>Cám ơn bạn đã tin tưởng sử dụng dịch vụ của chúng tôi</p>
-                </div>
-                <div class="col-md-7">
-                    <div class="row h-100">
-                        <div class="col-md-7 contact-logo d-flex flex-column justify-content-around">
-                            <img src="assets/img/logo-myauris.png" alt="">
-                            <div>
-                                <li>
-                                    <i class="fas fa-phone-alt"></i>
-                                    <strong>Hotline:</strong>
-                                    <span>số điện thoại</span>
-                                </li>
-                            </div>
-                            <div>
-                                <li>
-                                    <i class="fas fa-phone-alt"></i>
-                                    <strong>Hotline:</strong>
-                                    <span>số điện thoại</span>
-                                </li>
-                            </div>
-                            <div>
-                                <li>
-                                    <i class="fas fa-phone-alt"></i>
-                                    <strong>Hotline:</strong>
-                                    <span>số điện thoại</span>
-                                </li>
-                            </div>
-                            <div>
-                                <li>
-                                    <i class="fas fa-phone-alt"></i>
-                                    <strong>Hotline:</strong>
-                                    <span>số điện thoại</span>
-                                </li>
-                            </div>
-                            <div>
-                                <li>
-                                    <i class="fas fa-phone-alt"></i>
-                                    <strong>Hotline:</strong>
-                                    <span>số điện thoại</span>
-                                </li>
-                            </div>
-
-                        </div>
-                        <div class="col-md-5 contact-dr p-0">
-                            <img src="assets/img/dr.jpg" alt="">
-                        </div>
+                <div class="col-md-12">
+                    <div class="emergency" id="main-title5">
+                        <!--                            <i class="icon-phone5"></i>-->
+                        <span class="text">HOTLINE</span>
+                        <span class="number">(+84) 901 95 88 68</span>
+                        <!--                            <img src="images/myauris/emergency-divider.png" alt="">-->
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-</body>
-<!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
 
-<script src="assets/js/custom.js"></script>
-<script src="assets/js/progress.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
+
+            <div class="row wow zoomIn">
+                <div class="section-title text-center " style="visibility: visible; animation-name: zoomIn;">
+                    <h2>Liên Hệ Với Chúng Tôi</h2>
+                    <!--                        <div class="line"></div>-->
+                    <p>Nếu bạn có thắc mắc hoặc cần yêu cầu tư vấn, liên hệ với chúng tôi ngay.</p>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="contact">
+                        <form id="contact-form" method="post" action="" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="form-group col-md-4">
+                                    <input type="text" name="name" class="form-control" placeholder="Tên (*)"
+                                           required="required">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="text" name="phone" class="form-control"
+                                           placeholder="Số điện thoại (*)" required="required">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="email" name="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-12">
+                                        <textarea rows="6" name="message" class="form-control"
+                                                  placeholder="Lời nhắn"></textarea>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" value="Send message" name="submit" id="submitButton"
+                                            class="btn btn-lg btn-light-bg-two hvr-pulse-grow" title="Gửi!">Gửi
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- END COL -->
+            </div>
+    </footer>
+    <!--End Footer-->
+    <!--        <section class="our-address section-padding" id="our-address">-->
+    <!--            <div class="row ">-->
+    <!--                <div class="col-md-3 col-sm-6 col-xs-12 flex-map">-->
+    <!--                    <div class="boxft hvr-icon-up">-->
+    <!--                        <i class="fas fa-map-marker-alt hvr-icon"></i>-->
+    <!--                        <h6>Co so 1</h6>-->
+    <!--                        <p>11Bis Nguyễn Gia Thiều, P.6</p>-->
+    <!--                        <p>Quận 3, TP. Hồ Chí Minh.</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="col-md-3 col-sm-6 col-xs-12 flex-map">-->
+    <!--                    <div class="boxft hvr-icon-up">-->
+    <!--                        <i class="fas fa-map-marker-alt hvr-icon"></i>-->
+    <!--                        <h6>Co so 1</h6>-->
+    <!--                        <p>11Bis Nguyễn Gia Thiều, P.6</p>-->
+    <!--                        <p>Quận 3, TP. Hồ Chí Minh.</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="col-md-3 col-sm-6 col-xs-12 flex-map">-->
+    <!--                    <div class="boxft hvr-icon-up">-->
+    <!--                        <i class="fas fa-map-marker-alt hvr-icon"></i>-->
+
+    <!--                        <h6>Co so 1</h6>-->
+    <!--                        <p>11Bis Nguyễn Gia Thiều, P.6</p>-->
+    <!--                        <p>Quận 3, TP. Hồ Chí Minh.</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="col-md-3 col-sm-6 col-xs-12 flex-map">-->
+    <!--                    <div class="boxft hvr-icon-up">-->
+    <!--                        <i class="fas fa-map-marker-alt hvr-icon"></i>-->
+
+    <!--                        <h6>Co so 1</h6>-->
+    <!--                        <p>11Bis Nguyễn Gia Thiều, P.6</p>-->
+    <!--                        <p>Quận 3, TP. Hồ Chí Minh.</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+
+
+    <!--            </div>-->
+    <!--        </section>-->
+    <section id="ggmap">
+        <div class="row">
+            <div class="col-sm-7">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4200034922633!2d106.68728836524713!3d10.779108892319725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f30752e0229%3A0x5c47b6661320335e!2zTmhhIEtob2EgVGjhuqltIE3hu7kgTXkgQXVyaXM!5e0!3m2!1svi!2s!4v1565858647777!5m2!1svi!2s"
+                        width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-5">
+                <ul>
+                    <li>
+                        <i class="icon-phone4"></i>
+                        <strong>Hotline: </strong>
+                        <span>(+84) 901 95 88 68</span>
+                    </li>
+                    <li>
+                        <i class="icon-phone4"></i>
+                        <strong>Địa chỉ</strong>
+                        <span>11 Bis, Nguyễn Gia Thiều, Q3, HCM</span>
+                    </li>
+                    <li>
+                        <i class="icon-phone4"></i>
+                        <strong>Địa chỉ</strong>
+                        <span>11 Bis, Nguyễn Gia Thiều, Q3, HCM</span>
+                    </li>
+                    <li>
+                        <i class="icon-phone4"></i>
+                        <strong>Địa chỉ</strong>
+                        <span>11 Bis, Nguyễn Gia Thiều, Q3, HCM</span>
+                    </li>
+                    <li>
+                        <i class="icon-phone4"></i>
+                        <strong>Mon-Sat:</strong>
+                        <span>8:00AM - 7:00PM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-bottom">
+        <div class="container">
+            <div class="row wow bounceInDown" data-wow-delay=".4s"
+                 style="visibility: visible; animation-delay: 0.4s; animation-name: bounceInUp;">
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+
+                    <p class="footer_copyright">Email: 365dep@copyright - Đường dây nóng: (+84) 901 95 88 68</p>
+                </div>
+                <!--- END COL -->
+            </div>
+            <!--- END ROW -->
+        </div>
+        <!--- END CONTAINER -->
+    </footer>
+
+
+    <a href="body" class="cd-top"></a>
+</div>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<!-- SMOOTH SCROLL -->
+<script type="text/javascript" src="js/scroll-desktop.js"></script>
+<script type="text/javascript" src="js/scroll-desktop-smooth.js"></script>
+
+<!-- START REVOLUTION SLIDER -->
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+
+
+<!-- Date Picker and input hover -->
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.js"></script>
+
+<!-- Fun Facts Counter -->
+<script type="text/javascript" src="js/counter.js"></script>
+
+
+<!-- Welcome Tabs -->
+<script type="text/javascript" src="js/tabs.js"></script>
+
+
+<!-- All Carousel -->
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+
+<!-- Mobile Menu -->
+<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+
+<!-- All Scripts -->
+<script type="text/javascript" src="js/custom.js"></script>
+
+
+<!-- Revolution Slider -->
+<script type="text/javascript">
+    // jQuery('.tp-banner').show().revolution(
+    //     {
+    //         dottedOverlay: "none",
+    //         delay: 16000,
+    //         startwidth: 1170,
+    //         startheight: 720,
+    //         hideThumbs: 200,
+
+    //         thumbWidth: 100,
+    //         thumbHeight: 50,
+    //         thumbAmount: 5,
+
+    //         navigationType: "nexttobullets",
+    //         navigationArrows: "solo",
+    //         navigationStyle: "preview",
+
+    //         touchenabled: "on",
+    //         onHoverStop: "on",
+
+    //         swipe_velocity: 0.7,
+    //         swipe_min_touches: 1,
+    //         swipe_max_touches: 1,
+    //         drag_block_vertical: false,
+
+    //         parallax: "mouse",
+    //         parallaxBgFreeze: "on",
+    //         parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+
+    //         keyboardNavigation: "off",
+
+    //         navigationHAlign: "center",
+    //         navigationVAlign: "bottom",
+    //         navigationHOffset: 0,
+    //         navigationVOffset: 20,
+
+    //         soloArrowLeftHalign: "left",
+    //         soloArrowLeftValign: "center",
+    //         soloArrowLeftHOffset: 20,
+    //         soloArrowLeftVOffset: 0,
+
+    //         soloArrowRightHalign: "right",
+    //         soloArrowRightValign: "center",
+    //         soloArrowRightHOffset: 20,
+    //         soloArrowRightVOffset: 0,
+
+    //         shadow: 0,
+    //         fullWidth: "on",
+    //         fullScreen: "off",
+
+    //         spinner: "spinner4",
+
+    //         stopLoop: "off",
+    //         stopAfterLoops: -1,
+    //         stopAtSlide: -1,
+
+    //         shuffle: "off",
+
+    //         autoHeight: "off",
+    //         forceFullWidth: "off",
+
+
+    //         hideThumbsOnMobile: "off",
+    //         hideNavDelayOnMobile: 1500,
+    //         hideBulletsOnMobile: "off",
+    //         hideArrowsOnMobile: "off",
+    //         hideThumbsUnderResolution: 0,
+
+    //         hideSliderAtLimit: 0,
+    //         hideCaptionAtLimit: 0,
+    //         hideAllCaptionAtLilmit: 0,
+    //         startWithSlide: 0,
+    //         videoJsPath: "rs-plugin/videojs/",
+    //         fullScreenOffsetContainer: ""
+    //     });
+    $("a[href*='#']:not([href='#])").click(function () {
+        let target = $(this).attr("href");
+        $('html,body').stop().animate({
+            scrollTop: $(target).offset().top - 90
+        }, 1000);
+        event.preventDefault();
+    });
+    $('body').on('click', '.parent a', function () {
+        $('.parent a').removeClass('abc');
+        $(this).addClass('abc');
+    });
+    $(function () {
+        var h = 0;
+        $('#owl-demo4 .owl-item').each(function () {
+            if ($(this).outerHeight() > h || h == 0) h = $(this).outerHeight();
+        });
+        $('#owl-demo4 .owl-item').height(h);
+        // var abc = 1;
+        // for (i = 0; i < $('.height-css').length; i++) {
+        //     if (abc < $('.height-css').height()){
+        //         abc = $('.height-css').height()
+        //     }
+        //     $('.height-css').height = abc +'px'
+        // }
+        //Home Sections fit screen
+
+        /*global $:false */
+        $(function () {
+            "use strict";
+            $('.home').css({'height': ($(window).width()) / 1.5 + 'px'});
+            $(window).resize(function () {
+                $('.home').css({'height': ($(window).width() / 1.5) + 'px'});
+            });
+        });
+    });
+    $(window).resize(function () {
+        $(function () {
+            var h = 0;
+
+            $(window).resize(function () {
+                $('#owl-demo4 .owl-item').each(function () {
+                    if ($(this).outerHeight() > h || h == 0) h = $(this).outerHeight();
+                });
+                $('#owl-demo4 .owl-item').height(h);
+            });
+            // var abc = 1;
+            // for (i = 0; i < $('.height-css').length; i++) {
+            //     if (abc < $('.height-css').height()){
+            //         abc = $('.height-css').height()
+            //     }
+            //     $('.height-css').height = abc +'px'
+            // }
+        });
+    })
+    //Home Sections fit screen
+
+    /*global $:false */
+    $(function () {
+        "use strict";
+        $('.tp-banner').css({'height': ($(window).width()) / 1.5 + 'px'});
+        $(window).resize(function () {
+            $('.tp-banner').css({'height': ($(window).width() / 1.5) + 'px'});
+        });
+    });
+    $(function () {
+        "use strict";
+        $('.box-introductions').css({'height': ($('.tp-banner').width()) / 4 + 'px'});
+        $(window).resize(function () {
+            $('.box-introductions').css({'height': ($('.tp-banner').width() / 4) + 'px'});
+        });
+        $('.box-introductions').css({'width': ($('.tp-banner').width()) / 3 + 'px'});
+        $(window).resize(function () {
+            $('.box-introductions').css({'width': ($('.tp-banner').width() / 3) + 'px'});
+        });
+    });
+    $(function () {
+        "use strict";
+        $('.box-introductions h1').css({'font-size': ($('.box-introductions').width()) / 10 + 'px'});
+        $(window).resize(function () {
+            $('.box-introductions h1').css({'font-size': ($('.box-introductions').width()) / 10 + 'px'});
+        });
+        $('.box-introductions h4').css({'font-size': ($('.box-introductions').width()) / 13 + 'px'});
+        $(window).resize(function () {
+            $('.box-introductions h4').css({'font-size': ($('.box-introductions').width()) / 13 + 'px'});
+        });
+        $('.box-introductions p').css({'font-size': ($('.box-introductions').width()) / 17 + 'px'});
+        $(window).resize(function () {
+            $('.box-introductions p').css({'font-size': ($('.box-introductions').width()) / 17 + 'px'});
+        });
+    });
+    $(function () {
+        "use strict";
+        $('.box-introductions button').css({
+            'height': ($('.box-introductions').width()) / 7 + 'px',
+            'font-size': ($('.box-introductions').width()) / 17 + 'px'
+        });
+        $(window).resize(function () {
+            $('.box-introductions button').css({
+                'height': ($('.box-introductions').width() / 7) + 'px',
+                'font-size': ($('.box-introductions').width()) / 17 + 'px'
+            });
+        });
+        $('.box-introductions button').css({'width': ($('.box-introductions').width()) / 2 + 'px'});
+        $(window).resize(function () {
+            $('.box-introductions button').css({'width': ($('.box-introductions').width() / 2) + 'px'});
+        });
+    });
+    $(function () {
+        "use strict";
+        $('.tp-banner-container').css({'height': ($(window).width()) / 2 + 'px'});
+        $(window).resize(function () {
+            $('.tp-banner-container').css({'height': ($(window).width() / 2) + 'px'});
+        });
+
+    });
+    // $(function () {
+    //     "use strict";
+    //     $('.welcome-serv-img iframe').css({ 'width': ($('.welcome-serv-img').width()) + 'px' ,'height': ($('.welcome-serv-img').width()/1.5) + 'px'});
+    //     $(window).resize(function () {
+    //         $('.welcome-serv-img iframe').css({ 'width': ($('.welcome-serv-img').width()) + 'px' ,'height': ($('.welcome-serv-img').width()/1.5) + 'px'});
+    //     });
+
+    // });
+</script>
+
+
+</body>
 
 </html>
