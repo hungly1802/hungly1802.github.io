@@ -98,7 +98,7 @@ a#add-review-btn:hover{background-color: #7bc4b8;}
 .main-footer .useful-links ul li a:hover{ color:#7bc4b8;}
 .main-footer .get-touch ul li a:hover span{color:#7bc4b8;}
 #accordion2 .time-table{ background: #7bc4b8 url(../images/time-icon-bg.png) no-repeat;}
-.top-bar .get-touch li:last-child a:hover{   color: #2b96cc;}
+.top-bar .get-touch li a:hover{   color: rgba(2, 173, 198, 0.84);}
 .meet-specialists .gallery-sec .layer { background-color:rgba(2, 173, 198, 0.84);}
 .member-detail .gallery-sec .layer { background-color: rgba(2, 173, 198, 0.81);}
 .meet-specialists .gallery-sec a:hover { color: #7bc4b8;}

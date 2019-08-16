@@ -147,7 +147,7 @@
 	position: absolute;
 }
 
-.owl-theme .owl-controls .owl-buttons .owl-next{   right: -2%;  background-position: -15px 0; top: 46%;  color: rgba(142, 18, 18, 0);}
+.owl-theme .owl-controls .owl-buttons .owl-next{   right: -5%;  background-position: -15px 0; top: 46%;  color: rgba(142, 18, 18, 0);}
 .owl-theme .owl-controls .owl-buttons .owl-prev{   left: -5%;  background-position: 0px 0;    top: 46%;  color: rgba(142, 18, 18, 0);}
 
 /* Clickable class fix problem with hover on touch devices */

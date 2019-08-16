@@ -301,7 +301,7 @@ img:hover {transition: background-color 0.5s ease; }
     font-weight: 800;
     margin: 0 auto;
     border-bottom: 1px dotted white;
-    width: 630px;
+    /*width: 630px;*/
     padding-bottom: 10px;
     padding-top: 5px;}
 .footer .emergency img{margin:10px 0 0 0; width:960px; }
