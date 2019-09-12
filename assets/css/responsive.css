@@ -1,0 +1,34 @@
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  #main .home-about .about-right {
+    padding-left: 15px; } }
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1370px; } }
+@media only screen and (min-width: 1200px) {
+  #footer .footer-top .box-video .embed-responsive-4by3::before {
+    padding-top: 88%; } }
+@media only screen and (min-width: 1024px) and (max-width: 1349px) {
+  #footer .footer-bottom {
+    padding: 25px 0; } }
+@media only screen and (max-width: 767px) {
+  #header .header-main .navbar-area {
+    padding: 0 20px; }
+    #header .header-main .navbar-area .navbar-collapse {
+      position: absolute;
+      top: 105px;
+      right: 20px;
+      background: #fff;
+      z-index: 9;
+      width: 250px;
+      padding-left: 20px;
+      padding-right: 20px;
+      -webkit-box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.4); }
+      #header .header-main .navbar-area .navbar-collapse .navbar-nav .nav-item {
+        padding: 0;
+        line-height: 38px; }
+        #header .header-main .navbar-area .navbar-collapse .navbar-nav .nav-item .nav-link {
+          padding: .4rem !important; } }
+
+/*# sourceMappingURL=responsive.css.map */

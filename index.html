@@ -1,1098 +1,825 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="vi">
 <head>
-    <title>Medical Guide</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Noto+Sans&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/myauris/favicon-medical.png">
-
-
-    <!--main file-->
-    <link href="css/medical-guide.css" rel="stylesheet" type="text/css">
-
-    <!--Medical Guide Icons-->
-    <link href="fonts/medical-guide-icons.css" rel="stylesheet" type="text/css">
-
-    <!-- Default Color-->
-    <link href="css/default-color.css" rel="stylesheet" id="color" type="text/css">
-
-    <!--bootstrap-->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-
-    <!--Dropmenu-->
-    <link href="css/dropmenu.css" rel="stylesheet" type="text/css">
-
-    <!--Sticky Header-->
-    <link href="css/sticky-header.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/hover.css">
-
-    <!--revolution-->
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/settings.css" rel="stylesheet" type="text/css">
-    <link href="css/extralayers.css" rel="stylesheet" type="text/css">
-
-    <!--Accordion-->
-    <link href="css/accordion.css" rel="stylesheet" type="text/css">
-
-    <!--tabs-->
-    <link href="css/tabs.css" rel="stylesheet" type="text/css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="vi"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="assets/img/icon/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/img/icon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>My Auris - Viện may đo nụ cười MY AURIS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Viện công nghệ nha khoa thẩm mỹ Auris - nha khoa Auris: Chuyên làm răng thẩm mỹ, phủ răng sứ, làm răng sứ, bọc răng sứ thẩm mỹ.">
+    <meta name="keyword" content="Chuyên làm răng thẩm mỹ, phủ răng sứ, làm răng sứ, bọc răng sứ thẩm mỹ">
+    <meta name="robots" content="noodp,index,follow">
+    <link rel="canonical" href="/">
+    <!--Facebook Meta Tag-->
+    <meta property="og:title" content="My Auris - Viện may đo nụ cười MY AURIS">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Viện công nghệ nha khoa thẩm mỹ Auris - nha khoa Auris: Chuyên làm răng thẩm mỹ, phủ răng sứ, làm răng sứ, bọc răng sứ thẩm mỹ.">
+    <meta property="og:keyword" content="Chuyên làm răng thẩm mỹ, phủ răng sứ, làm răng sứ, bọc răng sứ thẩm mỹ">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="My Auris"/>
+    <meta property="og:locale" content="vi_VN"/>
+    <meta property="fb:app_id" content="">
+    <!--Twitter Meta Tag-->
+    <meta name="twitter:title" content="My Auris - Viện may đo nụ cười MY AURIS">
+    <meta name="twitter:description" content="Viện công nghệ nha khoa thẩm mỹ Auris - nha khoa Auris: Chuyên làm răng thẩm mỹ, phủ răng sứ, làm răng sứ, bọc răng sứ thẩm mỹ.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:site" content="My Auris">
+    <meta name="twitter:creator" content="My Auris">
+    <!--Google Fonts-->
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet';this.display='swap'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"></noscript>
+    <!--Bootstrap-->
+    <link rel="preload" href="assets/third_party/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/third_party/bootstrap/css/bootstrap.min.css"></noscript>
     <!--Owl Carousel-->
-    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
-
-    <!-- Mobile Menu -->
-    <link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css"/>
-    <link rel="stylesheet" type="text/css" href="css/demo.css"/>
-
-    <!--PreLoader-->
-    <link href="css/loader.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/mystyle.css">
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
+    <link rel="preload" href="assets/third_party/owl-carousel/assets/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/third_party/owl-carousel/assets/owl.carousel.min.css"></noscript>
+    <link rel="preload" href="assets/third_party/owl-carousel/assets/owl.theme.default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/third_party/owl-carousel/assets/owl.theme.default.min.css"></noscript>
+    <!--Animate Css-->
+    <link rel="preload" href="assets/css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/animate.css"></noscript>
+    <!--Font Awesome-->
+    <link rel="preload" href="assets/third_party/font-awesome/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/third_party/font-awesome/css/all.min.css"></noscript>
+    <!--Main Style-->
+    <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
+    <!--Responsive Style-->
+    <link rel="preload" href="assets/css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/responsive.css"></noscript>
+    <script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Dentist",
+            "@id": "https://myauris.vn",
+            "url": "https://myauris.vn",
+            "logo": "https://myauris.vn/images/logo.png",
+            "image": "https://myauris.vn/images/logo.png",
+            "priceRange": "20$-10000$",
+            "hasMap": "https://g.page/nhakhoamyauris",
+            "email": "mailto:social@myauris.vn",
+            "founder": "Hoàng Thanh Hiếu",
+            "slogan": "Mang đến sự thật cho khách hàng. Khách hàng không nói láo.",
+            "address": {
+            "@type": "PostalAddress",
+                "addressLocality": "Quận 3",
+                "addressCountry": "VIỆT NAM",
+                "addressRegion": "Hồ Chí Minh",
+                "postalCode": "700000",
+                "streetAddress": "11 Bis, Nguyễn Gia Thiều, Quận 3, HCM"
+        },
+            "description": "Nha khoa My Auris chuyên dịch vụ làm răng sứ thẩm mỹ như: bọc răng sứ, phủ răng sứ, dán răng sứ Veneer với chất liệu răng sứ kim loại, răng toàn sứ, răng sứ lumineer, sứ thạch anh, ngọc trai… chỉnh hình như niềng răng hô mắc cài, không mắc cài, trong suốt với chất liệu kim loại, sứ, nhựa. Dịch vụ phục hồi răng Làm cầu răng sứ, trồng răng implant.",
+            "name": "My Auris",
+            "telephone": "0901958868",
+            "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+                "opens": "08:30",
+                "closes": "19:00"
+        },
+            "geo": {
+            "@type": "GeoCoordinates",
+                "latitude": "10.7792488",
+                "longitude": "106.68934020000006"
+        },
+            "potentialAction": {
+            "@type": "ReserveAction",
+                "target": {
+                "@type": "EntryPoint",
+                    "urlTemplate": "https://myauris.vn/pages/gioi-thieu.html",
+                    "inLanguage": "vn",
+                    "actionPlatform": [
+                    "http://schema.org/DesktopWebPlatform",
+                    "http://schema.org/IOSPlatform",
+                    "http://schema.org/AndroidPlatform"
+                ]
+            },
+            "result": {
+                "@type": "Reservation",
+                    "name": "Đặt lịch",
+                    "bookingTime": "8:30AM - 6:00PM",
+                    "priceCurrency": "10$-10000$",
+                    "provider": [
+                    "Dán sứ - Phủ màng sứ",
+                    "Phủ răng sứ",
+                    "Nhấn lợi giảm hô",
+                    "Nhấn lợi tạo đường cười.",
+                    "Niềng răng vô hình iWay",
+                    "Niềng răng vô hình Invisalige",
+                    "Niềng răng mắc cài",
+                    "Trồng răng implant",
+                    "Cầu răng sứ",
+                    "Trám răng",
+                    "Cạo vôi răng",
+                    "Điều trị tủy",
+                    "Nhổ răng"
+                ],
+                    "url": "https://myauris.vn/booking/booking"
+            }
+        },
+            "sameAs": [
+            "https://vi.wikipedia.org/wiki/Nha_khoa",
+            "https://vi.wikipedia.org/wiki/Ch%E1%BB%89nh_nha",
+            "https://vi.wikipedia.org/wiki/Th%E1%BB%83_lo%E1%BA%A1i:Nha_khoa",
+            "https://g.page/nhakhoamyauris?share",
+            "https://g.page/nhakhoamyauris?share",
+            "https://my-auris.business.site",
+            "https://plus.google.com/u/5/105358552699456166778",
+            "https://www.youtube.com/channel/UCc0nwWGLDMNm5wZMimb9YiQ",
+            "https://www.youtube.com/channel/UCP7RYyPmi32rBIgEpjCvqiw",
+            "https://auris.vn/",
+            "https://www.facebook.com/myauris/",
+            "https://twitter.com/myauris1",
+            "https://www.instagram.com/my_auris/",
+            "https://www.linkedin.com/in/my-auris-198182190/",
+            "https://www.pinterest.com/my_auris/",
+            "https://medium.com/@social_29247",
+            "https://www.tumblr.com/blog/myauris-smartdental",
+            "https://chiasekienthucnhakhoa.home.blog/"
+        ]
+        }
     </script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "name": "Hoàng Thanh Hiếu",
+            "jobTitle": "Manager",
+            "image": "https://www.facebook.com/hiruto.hieu",
+            "worksFor": "My Auris",
+            "url": "http://myauris.vn",
+            "sameAs": [
+                "https://www.facebook.com/hiruto.hieu"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Thành phố hồ chí minh",
+                "addressRegion": "vietnam"
+            }
+        }
+    </script>
 </head>
-
-<body data-spy="scroll" data-target="#scrollspy-nav" data-offset="110">
-
-<div id="wrap">
-
-    <!--Start PreLoader-->
-    <div id="preloader">
-        <div id="status">&nbsp;</div>
-        <div class="loader">
-            <h1>Loading...</h1>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    <!--End PreLoader-->
-
-
-    <!--Start Top Bar-->
-    <div class="top-bar">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-5">
-                    <span class="color1">MY AURIS </span>
-                    <span> - Phù phép cho hàm răng trắng sáng !</span>
-                </div>
-
-                <div class="col-md-7">
-
-
-                    <div class="get-touch">
-
-                        <ul>
-                            <li><a><i class="icon-phone4"></i> (+84) 901 95 88 68</a></li>
-                            <li><a href="#."><i class="icon-mail"></i>contact@myauris.vn</a></li>
+<body>
+    <div id="site-wrap">
+        <header id="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="navbar-top">
+                        <ul class="info d-none d-md-block">
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <span><a href="tel:(+84) 283 979 88 99">(+84) 283 979 88 99</a></span>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>11Bis Nguyễn Gia Thiều, P.6, Q.3, HCM</span>
+                            </li>
+                            <li>
+                                <i class="far fa-clock"></i>
+                                <span>08:30 am - 18:00 pm</span>
+                            </li>
                         </ul>
-
-                        <ul class="social-icons">
-                            <li><a href="#." class="fb"><i class="icon icon-euro"></i> </a></li>
-                            <li><a href="#." class="tw"><i class="icon icon-yen"></i> </a></li>
-                            <li><a href="#." class="gp"><i class="icon icon-caddieshoppingstreamline"></i> </a></li>
-                        </ul>
-
                     </div>
                 </div>
-
             </div>
-        </div>
-    </div>
-    <!--Top Bar End-->
-
-
-    <!--Start Header-->
-
-    <header class="header dark-back">
-        <div class="container">
-
-
-            <div class="row">
-
-                <div class="col-md-3">
-                    <a href="http://myauris.vn/" class="logo"><img src="images/myauris/logo-myauris.png" alt=""></a>
-                </div>
-
-                <div class="col-md-9">
-
-
-                    <nav class="menu-2 scrollspy-nav" id="navbar-example2">
-                        <ul class="nav wtf-menu ">
-                            <li class="parent"><a href="#main-title">GIỚI THIỆU</a>
-
-                            </li>
-
-                            <li class="parent"><a href="#main-title2">QUÁ TRÌNH</a>
-
-                            </li>
-
-                            <li class="parent"><a href="#main-title3">KẾT QUẢ</a>
-
-                            </li>
-
-                            <!--                                <li><a href="#main-title4">CÂU HỎI</a></li>-->
-
-                            <li class="parent"><a href="#main-title5">LIÊN HỆ</a>
-
-
-                            </li>
-
-                        </ul>
-                    </nav>
-
-                </div>
-
-            </div>
-
-
-        </div>
-    </header>
-    <!--End Header-->
-
-
-    <!-- Mobile Menu Start -->
-    <div class="container dark-back">
-        <div id="page">
-            <header class="header">
-                <a href="#menu"></a>
-
-            </header>
-
-            <nav id="menu">
-                <ul>
-                    <li class="select"><a href="#main-title">Giới thiệu</a>
-
-                    </li>
-                    <li><a href="#main-title2">Quá Trình</a>
-
-                    </li>
-                    <li><a href="#main-title3">Kết Quả</a>
-
-                    </li>
-
-                    <li><a href="#main-title4">Câu Hỏi</a>
-
-
-                    </li>
-
-
-                    <li><a href="#main-title5">Liên Hệ</a>
-
-                    </li>
-
-
-                </ul>
-
-
-            </nav>
-        </div>
-    </div>
-    <!-- Mobile Menu End -->
-
-
-    <div class="container">
-        <div class="time-table-sec">
-            <ul id="accordion2" class="accordion2">
-                <li>
-                    <ul class="submenu time-table">
-                        <li class="tit">
-                            <h5>Working Time</h5>
-                        </li>
-                        <li><span class="day">Monday - Friday</span> <span class="divider">-</span> <span
-                                class="time">8.00 - 16.00</span></li>
-                        <li><span class="day">Saturday</span> <span class="divider">-</span> <span class="time">9.15
-                                    - 17.00</span></li>
-                        <li><span class="day">Sunday</span> <span class="divider">-</span> <span class="time">9.45 -
-                                    15.00</span></li>
-                    </ul>
-                    <div class="link"><img class="time-tab" src="images/myauris/timetable-menu.png" alt=""></div>
-
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <!--Start Banner-->
-
-    <div class="tp-banner-container ">
-        <!--            <div class="bgblack"></div>-->
-        <div class="box-introductions animated fadeIn infinite count1">
-            <h1>TÊN KHÁCH HÀNG</h1>
-            <h4>Phủ răng sứ</h4>
-            <p>Độc quyền công nghệ Nano 5S ứng dụng trong việc chế tác phôi sứ.</p>
-            <!--                <button class="hvr-back-pulse">READ MORE</button>-->
-        </div>
-
-        <div class="tp-banner animated pulse infinite time ">
-
-
-        </div>
-    </div>
-
-    <!--End Banner-->
-
-    <!--Start Content-->
-    <div class="content dark-back" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-        <!--Start Welcome-->
-        <div class="welcome wow fadeInDown">
-            <div class="container">
-
-                <div class="row mypd5">
-                    <div class="col-md-12" style="text-align: center;">
-                        <div class="main-title" id="main-title">
-                            <h2>Hành trình tìm lại chiếc răng khểnh</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="tabbed-nav">
-                    <ul>
-                        <li><a>Giới thiệu</a></li>
-                        <li><a>Khuyết điểm</a></li>
-                        <li><a>Hành trình</a></li>
-                        <li><a>Video chia sẻ</a></li>
-                    </ul>
-
-
-                    <div>
-
-                        <div>
-
-                            <div class="row">
-
-                                <div class="col-md-6">
-                                    <div class="welcome-serv-img ">
-                                        <img src="images/myauris/about.jpg" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-
-                                    <div class="detail">
-                                        <h4>ĐỖ QUỲNH THỊ QUỐC Ý</h4>
-                                        <p>Tetracycline là một loại kháng sinh được sử dụng rộng rãi trong những năm
-                                            80, 90 do giá thành rẻ. Tuy nhiên, tác dụng phụ để lại là hàm răng xỉn
-                                            màu, thiếu hụt men răng, gây biến dạng răng.
-
-                                            Với khách hàng Đỗ Quỳnh Thị Quốc Ý, Tetracyline trở thành nỗi ám ảnh
-                                            khiến chị chẳng dám nở nụ cười. Nhưng chị đã thay đổi như một phép màu
-                                            tại Viện may đo nụ cười My Auris.
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                        <div>
-
-                            <div class="row">
-
-                                <div class="col-md-6">
-                                    <div class="welcome-serv-img">
-                                        <img src="images/myauris/do-quynh-thi-quoc-y.png" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-
-                                    <div class="detail">
-                                        <h4>Một khuyết điểm khiến cho mọi cô gái không tự tin</h4>
-                                        <p>Với mọi cô gái thì xinh đẹp không chỉ đến từ khuôn mặt mà còn đến từ nụ
-                                            cười. Vậy mà một khuyết điểm từ bé đã khiến Quốc Ý không có được một nụ
-                                            cười trọn vẹn để bây giờ khi trưởng thành thì đó vẫn là một thứ gì đó ám
-                                            ảnh cô. Nỗi lo đó là răng nhiễm Tetracycline. </p>
-
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                        <div>
-
-                            <div class="row">
-
-                                <div class="col-md-6">
-                                    <div class="welcome-serv-img">
-                                        <img src="images/myauris/do-quynh-thi-quoc-y.png" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-
-                                    <div class="detail">
-                                        <h4>Hành trình giúp cô tìm lại nụ cười mơ ước bấy lâu</h4>
-                                        <p>Một sự thay đổi lớn đã đến với cô sau khi Quốc Ý quyết tâm đi tìm sự thay
-                                            đổi cho nụ cười của mình. Nụ cười rạng rỡ và tươi mới đã không làm cô
-                                            thất vọng, đặc biệt hơn nụ cười đó đã giúp cô tự tin hơn sải bước cùng
-                                            chồng mình trong ngày lễ trọng đại.</p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                        <div>
-
-                            <div class="row">
-
-                                <div class="col-md-6 ">
-                                    <div class="welcome-serv-img embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item"
-                                                src="https://www.youtube.com/embed/4YzkF-2ZgbI" frameborder="0"
-                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                                allowfullscreen></iframe>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-
-                                    <div class="detail">
-                                        <h4>Latest Technology</h4>
-                                        <p>Chia sẻ của khách hàng có răng nhiễm Tetracycline
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-        </div>
-        <!--End Welcome-->
-
-
-        <!--Start Specialists-->
-        <div class="meet-specialists dark-back wow fadeInDown">
-            <div class="container">
-
-
-                <div class="row mypd5">
-                    <div class="col-md-12 ">
-                        <div class="main-title" id="main-title2">
-                            <h2><span>Quá Trình Điều Trị tại </span>MyAuris</h2>
-                            <!--                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>-->
-
-                        </div>
-                    </div>
-                </div>
-
-                <div id="demo">
+            <div class="header-main">
+                <nav class="navbar navbar-area navbar-expand-lg navbar-light dark-theme">
                     <div class="container">
-                        <div class="row">
-                            <div class="span12">
+                        <a class="navbar-brand logo" href="index.html">
+                            <img src="assets/img/logo.png" alt="logo">
+                        </a>
+                        <div class="collapse navbar-collapse" id="apptidy">
 
-                                <div id="owl-demo4" class="owl-carousel">
+                            <!-- navbar collapse start -->
+                            <ul class="navbar-nav" id="primary-menu">
+                                <!-- navbar- nav -->
+                                <li class="nav-item">
+                                    <a class="nav-link pl-0" href="/">Trang chủ
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">Về chúng tôi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#service">Dịch vụ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#product">Sản phẩm</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Liên hệ</a>
+                                </li>
+                            </ul>
+                            <!-- /.navbar-nav -->
+                        </div>
+                        <!-- /.navbar btn wrapper -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#apptidy" aria-controls="apptidy" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- navbar collapse end -->
+                    </div>
+                </nav>
+            </div>
+        </header>
 
-                                    <div class="post item">
+        <div class="overflow-hidden">
+            <div class="slider-show owl-carousel owl-theme">
+                <div class="item">
+                    <div class="slider-show-heading">
+                        <div class="slider-show-image lozad" data-background-image="assets/img/banner-full.jpg" alt="My Auris"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-show-heading">
+                        <div class="slider-show-image lozad" data-background-image="assets/img/banner-full.jpg" alt="My Auris"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main id="main">
+            <section class="section home-wts">
+                <div class="container">
+                    <div class="section-title">
+                        <div class="h3">Tiêu chuẩn WTS</div>
+                    </div>
+                    <div class="section-description">
+                        My Auris cung cấp thông tin minh bạch, giải pháp tối ưu, với hệ thống hỗ trợ tự động, đưa Smart Suggest (gợi ý thông minh) và Smart Dicision (quyết định thông minh) tới cho khách hàng.
+                    </div>
+                    <div class="section-content">
+                        <div id="slider">
+                            <input type="radio" name="slider" id="s1">
+                            <input type="radio" name="slider" id="s2" checked>
+                            <input type="radio" name="slider" id="s3">
+                            <label for="s1" id="slide1">
+                                <span class="image">
+                                    <img class="lozad" data-src="assets/img/card.jpg" alt="">
+                                </span>
+                                <span class="content">
+                                    <span class="title">WTS Tiêu chuẩn nha khoa công nghệ 4.0</span>
+                                    <span class="text">
+                                        Nụ cười hiện đại, chuẩn tỷ lệ vàng, đúng tính cách, nhân tướng. Đường cười cân đối, hài hòa với toàn bộ cấu trúc khuôn mặt.
+                                    </span>
+                                </span>
+                            </label>
+                            <label for="s2" id="slide2">
+                                <span class="image">
+                                    <img class="lozad" data-src="assets/img/card.jpg" alt="">
+                                </span>
+                                <span class="content">
+                                    <span class="title">WTS Tiêu chuẩn nụ cười 4.0</span>
+                                    <span class="text">
+                                        Nụ cười hiện đại, chuẩn tỷ lệ vàng, đúng tính cách, nhân tướng. Đường cười cân đối, hài hòa với toàn bộ cấu trúc khuôn mặt.
+                                    </span>
+                                </span>
+                            </label>
+                            <label for="s3" id="slide3">
+                                <span class="image">
+                                    <img class="lozad" data-src="assets/img/card.jpg" alt="">
+                                </span>
+                                <span class="content">
+                                    <span class="title">WTS Tiêu chuẩn nha khoa 4.0</span>
+                                    <span class="text">
+                                        Nụ cười hiện đại, chuẩn tỷ lệ vàng, đúng tính cách, nhân tướng. Đường cười cân đối, hài hòa với toàn bộ cấu trúc khuôn mặt.
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                                        <div class="gallery-sec">
-                                            <div class="image-hover img-layer-slide-left-right">
-                                                <img src="images/myauris/about.jpg" alt="">
-<!--                                                <div class="layer">-->
-<!--                                                    <a href="#."><i class="icon-euro"></i></a>-->
-<!--                                                    <a href="#."><i class="icon-yen"></i></a>-->
-<!--                                                    <a href="#."><i class="icon-caddieshoppingstreamline"></i></a>-->
-<!--                                                </div>-->
+            <section class="section home-services">
+                <div class="container">
+                    <div class="section-title">
+                        <div class="h3">Dịch vụ</div>
+                    </div>
+                    <div class="section-content">
+                        <div class="owl-services owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="inner">
+                                    <div class="image owl-lazy" data-src="assets/img/card.jpg"></div>
+                                    <div class="description">
+                                        <p>Phủ răng sứ là giải pháp sử dụng vật liệu có độ mỏng chỉ 0,3mm ốp lên chiếc răng khuyết điểm. Vì răng sứ chỉ mỏng 0,3mm nên không phải mài nhỏ răng giúp răng gốc được bảo tồn tối đa và tuỷ cũng không chịu bất cứ sự thương tổn nào.</p>
+                                        <p>Phủ răng sứ khắc phục hiệu quả các khuyết điểm răng hàm như răng sâu, răng sứt mẻ, gãy vỡ, răng thưa, răng hô móm, răng ố vàng, nhiễm màu kháng sinh… Các tình trạng này đều làm mất đi tính thẩm mỹ khuôn hàm và ảnh hưởng đến khớp cắn, khả năng ăn nhai của mỗi người.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="inner">
+                                    <div class="image owl-lazy" data-src="assets/img/card.jpg"></div>
+                                    <div class="description">
+                                        <p>Phủ răng sứ là giải pháp sử dụng vật liệu có độ mỏng chỉ 0,3mm ốp lên chiếc răng khuyết điểm. Vì răng sứ chỉ mỏng 0,3mm nên không phải mài nhỏ răng giúp răng gốc được bảo tồn tối đa và tuỷ cũng không chịu bất cứ sự thương tổn nào.</p>
+                                        <p>Phủ răng sứ khắc phục hiệu quả các khuyết điểm răng hàm như răng sâu, răng sứt mẻ, gãy vỡ, răng thưa, răng hô móm, răng ố vàng, nhiễm màu kháng sinh… Các tình trạng này đều làm mất đi tính thẩm mỹ khuôn hàm và ảnh hưởng đến khớp cắn, khả năng ăn nhai của mỗi người.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="inner">
+                                    <div class="image owl-lazy" data-src="assets/img/card.jpg"></div>
+                                    <div class="description">
+                                        <p>Phủ răng sứ là giải pháp sử dụng vật liệu có độ mỏng chỉ 0,3mm ốp lên chiếc răng khuyết điểm. Vì răng sứ chỉ mỏng 0,3mm nên không phải mài nhỏ răng giúp răng gốc được bảo tồn tối đa và tuỷ cũng không chịu bất cứ sự thương tổn nào.</p>
+                                        <p>Phủ răng sứ khắc phục hiệu quả các khuyết điểm răng hàm như răng sâu, răng sứt mẻ, gãy vỡ, răng thưa, răng hô móm, răng ố vàng, nhiễm màu kháng sinh… Các tình trạng này đều làm mất đi tính thẩm mỹ khuôn hàm và ảnh hưởng đến khớp cắn, khả năng ăn nhai của mỗi người.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="inner">
+                                    <div class="image owl-lazy" data-src="assets/img/card.jpg"></div>
+                                    <div class="description">
+                                        <p>Phủ răng sứ là giải pháp sử dụng vật liệu có độ mỏng chỉ 0,3mm ốp lên chiếc răng khuyết điểm. Vì răng sứ chỉ mỏng 0,3mm nên không phải mài nhỏ răng giúp răng gốc được bảo tồn tối đa và tuỷ cũng không chịu bất cứ sự thương tổn nào.</p>
+                                        <p>Phủ răng sứ khắc phục hiệu quả các khuyết điểm răng hàm như răng sâu, răng sứt mẻ, gãy vỡ, răng thưa, răng hô móm, răng ố vàng, nhiễm màu kháng sinh… Các tình trạng này đều làm mất đi tính thẩm mỹ khuôn hàm và ảnh hưởng đến khớp cắn, khả năng ăn nhai của mỗi người.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section home-kols">
+                <div class="container">
+                    <div class="section-title">
+                        <div class="h3">Trải nghiệm của người nổi tiếng</div>
+                    </div>
+                    <div class="section-content">
+                        <ul class="nav nav-tabs justify-content-center list-unstyled" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="kol-tab-1" data-toggle="tab" href="#kol-1" role="tab" aria-controls="kol-1" aria-selected="true">
+                                    <img class="lozad" data-src="assets/img/buitrunganh1.jpg" alt="" width="135" height="135">
+                                    <div class="h5">Bùi Trung Anh</div>
+                                    <div class="career">Diễn viên</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="kol-tab-2" data-toggle="tab" href="#kol-2" role="tab" aria-controls="kol-2" aria-selected="false">
+                                    <img class="lozad" data-src="assets/img/buitrunganh1.jpg" alt="" width="135" height="135">
+                                    <div class="h5">Hồng Vân</div>
+                                    <div class="career">Diễn viên</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="kol-tab-3" data-toggle="tab" href="#kol-3" role="tab" aria-controls="kol-3" aria-selected="false">
+                                    <img class="lozad" data-src="assets/img/buitrunganh1.jpg" alt="" width="135" height="135">
+                                    <div class="h5">Cát Phượng</div>
+                                    <div>Diễn viên</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="kol-tab-4" data-toggle="tab" href="#kol-4" role="tab" aria-controls="kol-4" aria-selected="false">
+                                    <img class="lozad" data-src="assets/img/buitrunganh1.jpg" alt="" width="135" height="135">
+                                    <div class="h5">Hữu Tín</div>
+                                    <div>Diễn viên</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="kol-tab-5" data-toggle="tab" href="#kol-5" role="tab" aria-controls="kol-5" aria-selected="false">
+                                    <img class="lozad" data-src="assets/img/buitrunganh1.jpg" alt="" width="135" height="135">
+                                    <div class="h5">ST Sơn Thạch</div>
+                                    <div>Ca sĩ</div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="kol-1" role="tabpanel" aria-labelledby="kol-tab-1">
+                                <div class="row align-items-center m-md-0 d-none">
+                                    <div class="testimonial col-md-6 p-md-0">
+                                        <div class="inner">
+                                            <div class="kol-name h4">Bùi Trung Anh</div>
+                                            <div class="text">
+                                                KHÔNG CÒN NHẬN RA CHÍNH MÌNH SAU KHI PHỦ RĂNG SỨ TẠI MY AURIS
+                                            </div>
+                                            <div class="rating">
+                                                Đánh giá:
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star checked"></i>
+                                                <i class="fas fa-star"></i>
                                             </div>
                                         </div>
-
-                                        <div class="detail">
-                                            <h6>Hướng điều trị</h6>
-                                            <!--                                                <span>Outpatient Surgery</span>-->
-                                            <p class="height-css">- Răng nhiễm Tetracycline, xỉn màu nâu, mất thẩm
-                                                mỹ <br/>
-                                                - Thiếu sản men răng<br/>
-                                                - Răng biến dạng</p>
-                                        </div>
-
                                     </div>
-                                    <div class="post item">
-
-                                        <div class="gallery-sec">
-                                            <div class="image-hover img-layer-slide-left-right">
-                                                <img src="images/myauris/about2.jpg" alt="">
-<!--                                                <div class="layer">-->
-<!--                                                    <a href="#."><i class="icon-euro"></i></a>-->
-<!--                                                    <a href="#."><i class="icon-yen"></i></a>-->
-<!--                                                    <a href="#."><i class="icon-caddieshoppingstreamline"></i></a>-->
-<!--                                                </div>-->
-                                            </div>
-                                        </div>
-
-                                        <div class="detail">
-                                            <h6>Hướng điều trị</h6>
-                                            <!--                                                <span>Cardiologist</span>-->
-                                            <p class="height-css">- Phủ răng sứ can thiệp 0,6 – 0,8mm mỗi răng<br/>
-                                                - Công nghệ tiên tiến không mài nhỏ răng, không lấy tủy, an toàn
-                                                sinh lý<br/>
-                                                - Chọn form răng Oval tự nhiên, thay đổi hình thể răng<br/>
-                                                - Điều chỉnh cung cười chuẩn</p>
-                                        </div>
-
+                                    <div class="video col-md-6 p-md-0">
+                                        <img class="lozad" data-src="assets/img/kol-video.jpg" alt="">
                                     </div>
-                                    <div class="post item">
+                                </div>
 
-                                        <div class="gallery-sec">
-                                            <div class="image-hover img-layer-slide-left-right">
-                                                <img src="images/myauris/about3.jpg" alt="">
-<!--                                                <div class="layer">-->
-<!--                                                    <a href="#."><i class="icon-euro"></i></a>-->
-<!--                                                    <a href="#."><i class="icon-yen"></i></a>-->
-<!--                                                    <a href="#."><i class="icon-caddieshoppingstreamline"></i></a>-->
-<!--                                                </div>-->
-                                            </div>
+
+
+                                <div class="inner">
+                                    <div class="testimonial">
+                                        <div class="kol-name h4">Bùi Trung Anh</div>
+                                        <div class="text">
+                                            KHÔNG CÒN NHẬN RA CHÍNH MÌNH SAU KHI PHỦ RĂNG SỨ TẠI MY AURIS
                                         </div>
-
-                                        <div class="detail">
-                                            <h6>Hướng điều trị</h6>
-                                            <!--                                                <span>Heart Specialist</span>-->
-                                            <p class="height-css">Chỉ 2 lần thăm khám, nhanh chóng, đã sở hữu ngay
-                                                nụ cười như ý. Nụ
-                                                cười mới với màu sắc trắng trong tự nhiên như răng thật. Cung cười
-                                                tỷ lệ chuẩn vàng với răng đều tăm tắp, phù hợp với gương mặt, Nhân
-                                                tướng học phương Đông.</p>
+                                        <div class="rating">
+                                            Đánh giá:
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star"></i>
                                         </div>
-
                                     </div>
+                                    <div class="video">
+                                        <img class="lozad" data-src="assets/img/kol-video.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="kol-2" role="tabpanel" aria-labelledby="kol-tab-2">
+                                <div class="inner">
+                                    <div class="testimonial">
+                                        <div class="kol-name h4">Hồng Vân</div>
+                                        <div class="text">
+                                            Phủ răng sứ chân thật như răng thật. Giữ mãi nét duyên cùng bà "Mai khó tính" - Nghệ Sĩ Hồng Vân
+                                        </div>
+                                        <div class="rating">
+                                            Đánh giá:
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="video">
+                                        <img class="lozad" data-src="assets/img/kol-video.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="kol-3" role="tabpanel" aria-labelledby="kol-tab-3">
+                                <div class="inner">
+                                    <div class="testimonial">
+                                        <div class="kol-name h4">Cát Phượng</div>
+                                        <div class="text">
+                                            PHÙ PHÉP CHO HÀM RĂNG TRẮNG SÁNG CHÂN THẬT ĐẸP TỰ NHIÊN ĐẾN TỪNG VÂN RĂNG
+                                        </div>
+                                        <div class="rating">
+                                            Đánh giá:
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="video">
+                                        <img class="lozad" data-src="assets/img/kol-video.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="kol-4" role="tabpanel" aria-labelledby="kol-tab-4">
+                                <div class="inner">
+                                    <div class="testimonial">
+                                        <div class="kol-name h4">Hữu Tín</div>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet veniam,
+                                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                            Duis autem vel eum iriure dolor in tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet veniam,
+                                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                        </div>
+                                        <div class="rating">
+                                            Đánh giá:
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="video">
+                                        <img class="lozad" data-src="assets/img/kol-video.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="kol-5" role="tabpanel" aria-labelledby="kol-tab-5">
+                                <div class="inner">
+                                    <div class="testimonial">
+                                        <div class="kol-name h4">ST Sơn Thạch</div>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet veniam,
+                                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                            Duis autem vel eum iriure dolor in tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet veniam,
+                                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                        </div>
+                                        <div class="rating">
+                                            Đánh giá:
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="video">
+                                        <img class="lozad" data-src="assets/img/kol-video.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <section class="section home-customers">
+                <div class="container">
+                    <div class="section-title">
+                        <div class="h3">Trải nghiệm của khách hàng</div>
+                    </div>
+                    <div class="section-content">
+                        <div class="owl-customers owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="customer-inner">
+                                    <div class="info">
+                                        <div class="ava-smal" style="background-image: url('assets/img/customer-small.jpg')"></div>
+                                        <div class="name h5">Lê Thanh Ý</div>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet veniam,
+                                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                        </div>
+                                        <div class="rating">
+                                            Đánh giá:
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="image">
+                                        <img class="owl-lazy" data-src="assets/img/customer-n.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="customer-inner">
+                                    <div class="info">
+                                        <div class="ava-smal" style="background-image: url('assets/img/customer-small.jpg')"></div>
+                                        <div class="name h5">Lê Thanh Ý</div>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet veniam,
+                                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                        </div>
+                                        <div class="rating">
+                                            Đánh giá:
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="image">
+                                        <img class="owl-lazy" data-src="assets/img/customer-n.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="customer-inner">
+                                    <div class="info">
+                                        <div class="ava-smal" style="background-image: url('assets/img/customer-small.jpg')"></div>
+                                        <div class="name h5">Lê Thanh Ý</div>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet veniam,
+                                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                        </div>
+                                        <div class="rating">
+                                            Đánh giá:
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="image">
+                                        <img class="owl-lazy" data-src="assets/img/customer-n.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="customer-inner">
+                                    <div class="info">
+                                        <div class="ava-smal" style="background-image: url('assets/img/customer-small.jpg')"></div>
+                                        <div class="name h5">Lê Thanh Ý</div>
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet veniam,
+                                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                        </div>
+                                        <div class="rating">
+                                            Đánh giá:
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star checked"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="image">
+                                        <img class="owl-lazy" data-src="assets/img/customer-n.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <section class="section home-booking">
+                <div class="container">
+                    <div class="row">
+                        <div class="booking col-lg-6">
+                            <div class="form-title h4">Đặt lịch khám</div>
+                            <form action="" class="form-booking">
+                                <p>Bạn muốn đặt lịch khám cho</p>
+                                <div class="input-wrap">
+                                    <input type="radio" name="booking-for" id="fm">
+                                    <label for="fm">Người thân</label>
+                                    <input type="radio" name="booking-for" id="sf">
+                                    <label for="sf">Bản thân</label>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Họ và tên">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Số điện thoại">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="date" name="date" placeholder="Ngày khám">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="time" name="time" placeholder="Thời gian">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" placeholder="Nội dung"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn-submit">Đặt lịch khám</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="address col-lg-6">
+                            <div class="title h4">Địa chỉ</div>
+                            <div class="row-address d-flex flex-wrap">
+                                <div class="image col-md-5 pl-md-0">
+                                    <img class="lozad is-loaded" data-src="assets/img/contact.jpg" alt="">
+                                </div>
+                                <div class="info col-md-7">
+                                    <div class="h6">Nha khoa My Auris - Cơ sở 1</div>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <strong>Địa chỉ:</strong>
+                                        11 Bis, Nguyễn Gia Thiều, P.6, Q.3, HCM
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-map-marked-alt"></i>
+                                        <a href="#"><i>Xem bản đồ</i></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row-address d-flex flex-wrap">
+                            <div class="image col-md-5 pl-md-0">
+                                <img class="lozad is-loaded" data-src="assets/img/contact.jpg" alt="">
+                            </div>
+                            <div class="info col-md-7">
+                                <div class="h6">Nha khoa My Auris - Cơ sở 2</div>
+                                <p>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <strong>Địa chỉ:</strong>
+                                    72 Nguyễn Cư Trinh, P.Phạm Ngũ Lão, Q.1, HCM
+                                </p>
+                                <p>
+                                    <i class="fas fa-map-marked-alt"></i>
+                                    <a href="#"><i>Xem bản đồ</i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section home-about">
+                <div class="container">
+                    <div class="section-title">
+                        <div class="h3">PHÒNG KHÁM NHA KHOA<br>MY AURIS</div>
+                    </div>
+                    <div class="section-content">
+                        <p>Viện may đo nụ cười My Auris tự hào là một trong những địa chỉ nha khoa thẩm mỹ có uy tín tại thành phố Hồ Chí Minh, đã thực hiện “may đo nụ cười” thành công cho nhiều khách hàng</p>
+
+                        <p><strong>GIẢI PHÁP TỐI ƯU ĐỂ RĂNG ĐẸP TỰ NHIÊN</strong></p>
+
+                        <p>Nha khoa đã ứng dụng công nghệ phủ sứ tân tiến nhất từ nước ngoài và vẫn đang tiếp tục cập nhật công nghệ mới để đem lại vẻ đẹp nụ cười ngày một hoàn hảo hơn. Đến với My Auris, khách hàng sẽ cảm nhận được dịch vụ chuyên nghiệp từ ê kíp cũng như trải nghiệm dịch vụ phủ sứ cao cấp có thể bạn chưa từng trải nghiệm trước đây.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="about col-lg-4">
+                            <p>Copyright© 1995-2019 My Auris All Rights Reserved.</p>
+                            <p>Bản quyền © 1995-2019 My Auris bảo lưu mọi quyền.</p>
+                            <p>Công ty My Auris</p>
+                            <p>Giấy CNĐT: 099999999999 , do UBND TP. Hồ Chí Minh cấp ngày 28/8/2007</p>
+                        </div>
+                        <div class="logo-footer col-lg-4 text-center">
+                            <a href="#">
+                                <img class="lozad" data-src="assets/img/logo.png" alt="My Auris" style="max-width:165px;max-height:103px">
+                            </a>
+                        </div>
+                        <div class="contact col-lg-4">
+                            <div class="box-info">
+                                <div class="item d-flex align-items-start">
+                                    <div class="icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="text">
+                                        <div class="h5">Địa chỉ</div>
+                                        <p>11Bis Nguyễn Gia Thiều, P. Bến Nghé, Quận 1, TP. HCM</p>
+                                    </div>
+                                </div>
+                                <div class="item d-flex align-items-start">
+                                    <div class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="text">
+                                        <div class="h5">Email</div>
+                                        <p><a href="mailto:tech@365dep.vn">info@myauris.vn</a></p>
+                                    </div>
+                                </div>
+                                <div class="item d-flex align-items-start">
+                                    <div class="icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="text">
+                                        <div class="h5">Điện thoại</div>
+                                        <p><a href="tel:(+84) 283 979 88 99">(+84) 283 979 88 99</a></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--End Specialists-->
-
-
-        <!--Start Testimonials-->
-        <div class="patients-testi dark-testi">
-            <div class="container">
-
-                <div class="row mypd3">
-                    <div class="col-md-12">
-                        <div class="main-title main-title2" id="main-title3">
-                            <h2>Quá Trình Thay Đổi</h2>
-                            <span>Hãy xem và cảm nhận sự thay đổi trước và sau khi làm răng tại My Auris</span>
-                        </div>
-                    </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <ul class="social list-unstyled list-inline float-right">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="testimonials-slide">
-                    <section id="slider">
-                        <input type="radio" name="slider" id="s1">
-                        <input type="radio" name="slider" id="s2">
-                        <input type="radio" name="slider" id="s3" checked>
-                        <input type="radio" name="slider" id="s4">
-                        <input type="radio" name="slider" id="s5">
-                        <label for="s1" id="slide1">
-                            <img src="images/myauris/slide1.jpg" alt="">
-                        </label>
-                        <label for="s2" id="slide2"><img src="images/myauris/slide1.jpg" alt=""></label>
-                        <label for="s3" id="slide3"><img src="images/myauris/slide1.jpg" alt=""></label>
-                        <label for="s4" id="slide4"><img src="images/myauris/slide1.jpg" alt=""></label>
-                        <label for="s5" id="slide5"><img src="images/myauris/slide1.jpg" alt=""></label>
-                    </section>
-                </div>
-                <!--                    <div id="testimonials">-->
-                <!--                        <div class="container">-->
-                <!--                            <div class="row">-->
-
-                <!--                                <div class="col-md-12">-->
-                <!--                                    <div class="span12">-->
-
-                <!--                                        <div id="owl-demo2" class="owl-carousel">-->
-
-                <!--                                            <div class="testi-sec">-->
-
-
-                <!--                                                <img src="images/myauris/1-1.png" alt="">-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <span class="name">Elebana Front</span>-->
-                <!--                                                <span class="patient">Heart Patient</span>-->
-
-
-                <!--                                            </div>-->
-                <!--                                            <div class="testi-sec">-->
-
-
-                <!--                                                <img src="images/myauris//2-1.png" alt="">-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <span class="name">Johny Bravo</span>-->
-                <!--                                                <span class="patient">Hair Patient</span>-->
-
-
-                <!--                                            </div>-->
-                <!--                                            <div class="testi-sec">-->
-                <!--                                                <img src="images/myauris/3-1.png" alt="">-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <span class="name">Rubica Noi</span>-->
-                <!--                                                <span class="patient">Skin Patient</span>-->
-
-
-                <!--                                            </div>-->
-                <!--                                            <div class="testi-sec">-->
-                <!--                                                <img src="images/myauris/4-1.png" alt="">-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <span class="name">Rubica Noi</span>-->
-                <!--                                                <span class="patient">Skin Patient</span>-->
-
-
-                <!--                                            </div>-->
-                <!--                                            <div class="testi-sec">-->
-                <!--                                                <img src="images/myauris/5-1.png" alt="">-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-
-                <!--                                                <span class="name">Rubica Noi</span>-->
-                <!--                                                <span class="patient">Skin Patient</span>-->
-
-
-                <!--                                            </div>-->
-                <!--                                            <div class="testi-sec">-->
-                <!--                                                <img src="images/myauris/6-1.png" alt="">-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-                <!--                                                <div class="height10"></div>-->
-
-                <!--                                                <span class="name">Rubica Noi</span>-->
-                <!--                                                <span class="patient">Skin Patient</span>-->
-
-
-                <!--                                            </div>-->
-
-
-                <!--                                        </div>-->
-
-                <!--                                    </div>-->
-                <!--                                </div>-->
-
-                <!--                            </div>-->
-                <!--                        </div>-->
-                <!--                    </div>-->
-
             </div>
-        </div>
-
-
-        <!--End Testimonials-->
-
+        </footer>
     </div>
-    <!--End Content-->
-    <!--        <section id="faq" class="template_faq">-->
-    <!--            <div class="container wow fadeInDown">-->
-    <!--                <div class="row mypd4">-->
-    <!--                    <div class="col-12 section-title text-center" id="main-title4">-->
-    <!--                        <h2>Câu Hỏi Thường Gặp</h2>-->
-    <!--                        &lt;!&ndash; <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> &ndash;&gt;-->
-    <!--                    </div>-->
-    <!--                    <div class="row">-->
-    <!--                        <div class="col-md-6 col-sm-6 col-xs-12">-->
-    <!--                            <div class="faq_desc">-->
-    <!--                                <p class="question">Q. Cho mình hỏi chi phí phủ răng sứ bên mình là bao nhiêu ạ?</p>-->
-    <!--                                <p class="ans">Giá phủ răng sứ tùy vào loại sứ khách lựa chọn, dao động theo chất liệu-->
-    <!--                                    sứ-->
-    <!--                                    bạn chọn.</p>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        <div class="col-md-6 col-sm-6 col-xs-12">-->
-    <!--                            <div class="faq_desc">-->
-    <!--                                <p class="question">Q. Cho mình hỏi phủ răng sứ có mất thời gian nhiều không?</p>-->
-    <!--                                <p class="ans">Chỉ mất 2 lần đến và mỗi lần cách nhau từ 3 – 4 ngày.</p>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
 
-    <!--                    &lt;!&ndash;- END COL &ndash;&gt;-->
-    <!--                    <div class="row">-->
-    <!--                        <div class="col-md-6 col-sm-6 col-xs-12">-->
-    <!--                            <div class="faq_desc">-->
-    <!--                                <p class="question">Q. Ngoài phủ răng thì ở đây có niềng răng không?</p>-->
-    <!--                                <p class="ans">Chỉ áp dụng phủ răng sứ, để đảm bảo tối ưu thời gian, cải thiện thẩm mỹ-->
-    <!--                                    nhanh-->
-    <!--                                    chóng và an toàn cho sức khỏe.</p>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        &lt;!&ndash;- END COL &ndash;&gt;-->
-
-    <!--                        <div class="col-md-6 col-sm-6 col-xs-12">-->
-    <!--                            <div class="faq_desc">-->
-    <!--                                <p class="question">Q. Vậy có nghĩa là mình xem được hình ảnh giả thuyết của mình sau-->
-    <!--                                    khi-->
-    <!--                                    làm răng ạ? Mình được kế 1 hình hay có nhiều hình để mình chọn không ạ?</p>-->
-    <!--                                <p class="ans">Thiết kế nụ cười sẽ giúp khách hàng hình dung được nụ cười của mình sau-->
-    <!--                                    khi-->
-    <!--                                    phủ răng sứ. Khách hàng hoàn toàn có thể lựa chọn nhiều form răng để phù hợp với-->
-    <!--                                    gương-->
-    <!--                                    mặt.</p>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-
-    <!--                    &lt;!&ndash;- END COL &ndash;&gt;-->
-
-    <!--                    &lt;!&ndash;- END COL &ndash;&gt;-->
-    <!--                    <div class="row">-->
-    <!--                        <div class="col-md-6 col-sm-6 col-xs-12">-->
-    <!--                            <div class="faq_desc">-->
-    <!--                                <p class="question">Q. Thiết kế nụ cười như vậy có mất phí không?</p>-->
-    <!--                                <p class="ans">Thiết kế nụ cười nằm trong quy trình thăm khám của tất cả các khách hàng-->
-    <!--                                    khi-->
-    <!--                                    đến với My Auris.</p>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        &lt;!&ndash;- END COL &ndash;&gt;-->
-    <!--                        <div class="col-md-6 col-sm-6 col-xs-12">-->
-    <!--                            <div class="faq_desc">-->
-    <!--                                <p class="question">Q. Răng hô, móm có thể phủ răng được không?</p>-->
-    <!--                                <p class="ans">Phương pháp phủ sứ giải quyết tất cả các tình trạng răng miệng gặp phải.-->
-    <!--                                </p>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-
-    <!--                    &lt;!&ndash;- END COL &ndash;&gt;-->
-    <!--                </div>-->
-    <!--                &lt;!&ndash;- END ROW &ndash;&gt;-->
-    <!--            </div>-->
-    <!--            &lt;!&ndash;- END CONTAINER &ndash;&gt;-->
-    <!--        </section>-->
-
-
-    <!--Start Footer-->
-    <footer class="footer" id="footer">
-        <div class="container wow zoomIn">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="emergency" id="main-title5">
-                        <!--                            <i class="icon-phone5"></i>-->
-                        <span class="text">HOTLINE</span>
-                        <span class="number">(+84) 901 95 88 68</span>
-                        <!--                            <img src="images/myauris/emergency-divider.png" alt="">-->
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row wow zoomIn">
-                <div class="section-title text-center " style="visibility: visible; animation-name: zoomIn;">
-                    <h2>Liên Hệ Với Chúng Tôi</h2>
-                    <!--                        <div class="line"></div>-->
-                    <p>Nếu bạn có thắc mắc hoặc cần yêu cầu tư vấn, liên hệ với chúng tôi ngay.</p>
-                </div>
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="contact">
-                        <form id="contact-form" method="post" action="" enctype="multipart/form-data">
-                            <div class="row">
-                                <div class="form-group col-md-4">
-                                    <input type="text" name="name" class="form-control" placeholder="Tên (*)"
-                                           required="required">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <input type="text" name="phone" class="form-control"
-                                           placeholder="Số điện thoại (*)" required="required">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <input type="email" name="email" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="form-group col-md-12">
-                                        <textarea rows="6" name="message" class="form-control"
-                                                  placeholder="Lời nhắn"></textarea>
-                                </div>
-                                <div class="col-md-12 text-center">
-                                    <button type="submit" value="Send message" name="submit" id="submitButton"
-                                            class="btn btn-lg btn-light-bg-two hvr-pulse-grow" title="Gửi!">Gửi
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div><!-- END COL -->
-            </div>
-    </footer>
-    <!--End Footer-->
-    <!--        <section class="our-address section-padding" id="our-address">-->
-    <!--            <div class="row ">-->
-    <!--                <div class="col-md-3 col-sm-6 col-xs-12 flex-map">-->
-    <!--                    <div class="boxft hvr-icon-up">-->
-    <!--                        <i class="fas fa-map-marker-alt hvr-icon"></i>-->
-    <!--                        <h6>Co so 1</h6>-->
-    <!--                        <p>11Bis Nguyễn Gia Thiều, P.6</p>-->
-    <!--                        <p>Quận 3, TP. Hồ Chí Minh.</p>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <div class="col-md-3 col-sm-6 col-xs-12 flex-map">-->
-    <!--                    <div class="boxft hvr-icon-up">-->
-    <!--                        <i class="fas fa-map-marker-alt hvr-icon"></i>-->
-    <!--                        <h6>Co so 1</h6>-->
-    <!--                        <p>11Bis Nguyễn Gia Thiều, P.6</p>-->
-    <!--                        <p>Quận 3, TP. Hồ Chí Minh.</p>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <div class="col-md-3 col-sm-6 col-xs-12 flex-map">-->
-    <!--                    <div class="boxft hvr-icon-up">-->
-    <!--                        <i class="fas fa-map-marker-alt hvr-icon"></i>-->
-
-    <!--                        <h6>Co so 1</h6>-->
-    <!--                        <p>11Bis Nguyễn Gia Thiều, P.6</p>-->
-    <!--                        <p>Quận 3, TP. Hồ Chí Minh.</p>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <div class="col-md-3 col-sm-6 col-xs-12 flex-map">-->
-    <!--                    <div class="boxft hvr-icon-up">-->
-    <!--                        <i class="fas fa-map-marker-alt hvr-icon"></i>-->
-
-    <!--                        <h6>Co so 1</h6>-->
-    <!--                        <p>11Bis Nguyễn Gia Thiều, P.6</p>-->
-    <!--                        <p>Quận 3, TP. Hồ Chí Minh.</p>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-
-
-    <!--            </div>-->
-    <!--        </section>-->
-    <section id="ggmap">
-        <div class="row">
-            <div class="col-sm-7">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4200034922633!2d106.68728836524713!3d10.779108892319725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f30752e0229%3A0x5c47b6661320335e!2zTmhhIEtob2EgVGjhuqltIE3hu7kgTXkgQXVyaXM!5e0!3m2!1svi!2s!4v1565858647777!5m2!1svi!2s"
-                        width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-            <div class="col-sm-5">
-                <ul>
-                    <li>
-                        <i class="icon-phone4"></i>
-                        <strong>Hotline: </strong>
-                        <span>(+84) 901 95 88 68</span>
-                    </li>
-                    <li>
-                        <i class="icon-location"></i>
-                        <strong>Địa chỉ</strong>
-                        <span>11 Bis, Nguyễn Gia Thiều, Q3, HCM</span>
-                    </li>
-                    <li>
-                        <i class="icon-location"></i>
-                        <strong>Địa chỉ</strong>
-                        <span>11 Bis, Nguyễn Gia Thiều, Q3, HCM</span>
-                    </li>
-                    <li>
-                        <i class="icon-location"></i>
-                        <strong>Địa chỉ</strong>
-                        <span>11 Bis, Nguyễn Gia Thiều, Q3, HCM</span>
-                    </li>
-                    <li>
-                        <i class="icon-clock"></i>
-                        <strong>Mon-Sat:</strong>
-                        <span>8:00AM - 7:00PM</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <footer class="footer-bottom">
-        <div class="container">
-            <div class="row " data-wow-delay=".4s"
-                 style="visibility: visible; animation-delay: 0.4s; animation-name: bounceInUp;">
-                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-
-                    <p class="footer_copyright">Email: 365dep@copyright - Đường dây nóng: (+84) 901 95 88 68</p>
-                </div>
-                <!--- END COL -->
-            </div>
-            <!--- END ROW -->
-        </div>
-        <!--- END CONTAINER -->
-    </footer>
-
-
-    <a href="body" class="cd-top"></a>
-</div>
-
-
-<script type="text/javascript" src="js/jquery.js"></script>
-
-<!-- SMOOTH SCROLL -->
-<script type="text/javascript" src="js/scroll-desktop.js"></script>
-<script type="text/javascript" src="js/scroll-desktop-smooth.js"></script>
-
-<!-- START REVOLUTION SLIDER -->
-<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
-
-
-<!-- Date Picker and input hover -->
-<script type="text/javascript" src="js/classie.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.js"></script>
-
-<!-- Fun Facts Counter -->
-<script type="text/javascript" src="js/counter.js"></script>
-
-
-<!-- Welcome Tabs -->
-<script type="text/javascript" src="js/tabs.js"></script>
-
-
-<!-- All Carousel -->
-<script type="text/javascript" src="js/owl.carousel.js"></script>
-
-<!-- Mobile Menu -->
-<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
-
-<!-- All Scripts -->
-<script type="text/javascript" src="js/custom.js"></script>
-
-
-<!-- Revolution Slider -->
-<script type="text/javascript">
-    // jQuery('.tp-banner').show().revolution(
-    //     {
-    //         dottedOverlay: "none",
-    //         delay: 16000,
-    //         startwidth: 1170,
-    //         startheight: 720,
-    //         hideThumbs: 200,
-
-    //         thumbWidth: 100,
-    //         thumbHeight: 50,
-    //         thumbAmount: 5,
-
-    //         navigationType: "nexttobullets",
-    //         navigationArrows: "solo",
-    //         navigationStyle: "preview",
-
-    //         touchenabled: "on",
-    //         onHoverStop: "on",
-
-    //         swipe_velocity: 0.7,
-    //         swipe_min_touches: 1,
-    //         swipe_max_touches: 1,
-    //         drag_block_vertical: false,
-
-    //         parallax: "mouse",
-    //         parallaxBgFreeze: "on",
-    //         parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
-
-    //         keyboardNavigation: "off",
-
-    //         navigationHAlign: "center",
-    //         navigationVAlign: "bottom",
-    //         navigationHOffset: 0,
-    //         navigationVOffset: 20,
-
-    //         soloArrowLeftHalign: "left",
-    //         soloArrowLeftValign: "center",
-    //         soloArrowLeftHOffset: 20,
-    //         soloArrowLeftVOffset: 0,
-
-    //         soloArrowRightHalign: "right",
-    //         soloArrowRightValign: "center",
-    //         soloArrowRightHOffset: 20,
-    //         soloArrowRightVOffset: 0,
-
-    //         shadow: 0,
-    //         fullWidth: "on",
-    //         fullScreen: "off",
-
-    //         spinner: "spinner4",
-
-    //         stopLoop: "off",
-    //         stopAfterLoops: -1,
-    //         stopAtSlide: -1,
-
-    //         shuffle: "off",
-
-    //         autoHeight: "off",
-    //         forceFullWidth: "off",
-
-
-    //         hideThumbsOnMobile: "off",
-    //         hideNavDelayOnMobile: 1500,
-    //         hideBulletsOnMobile: "off",
-    //         hideArrowsOnMobile: "off",
-    //         hideThumbsUnderResolution: 0,
-
-    //         hideSliderAtLimit: 0,
-    //         hideCaptionAtLimit: 0,
-    //         hideAllCaptionAtLilmit: 0,
-    //         startWithSlide: 0,
-    //         videoJsPath: "rs-plugin/videojs/",
-    //         fullScreenOffsetContainer: ""
-    //     });
-    $("a[href*='#']:not([href='#])").click(function () {
-        let target = $(this).attr("href");
-        $('html,body').stop().animate({
-            scrollTop: $(target).offset().top - 90
-        }, 1000);
-        event.preventDefault();
-    });
-    $('body').on('click', '.parent a', function () {
-        $('.parent a').removeClass('abc');
-        $(this).addClass('abc');
-    });
-    $(function () {
-        var h = 0;
-        $('#owl-demo4 .owl-item').each(function () {
-            if ($(this).outerHeight() > h || h == 0) h = $(this).outerHeight();
-        });
-        $('#owl-demo4 .owl-item').height(h);
-        // var abc = 1;
-        // for (i = 0; i < $('.height-css').length; i++) {
-        //     if (abc < $('.height-css').height()){
-        //         abc = $('.height-css').height()
-        //     }
-        //     $('.height-css').height = abc +'px'
-        // }
-        //Home Sections fit screen
-
-        /*global $:false */
-        $(function () {
-            "use strict";
-            $('.home').css({'height': ($(window).width()) / 1.5 + 'px'});
-            $(window).resize(function () {
-                $('.home').css({'height': ($(window).width() / 1.5) + 'px'});
-            });
-        });
-    });
-    $(window).resize(function () {
-        $(function () {
-            var h = 0;
-
-            $(window).resize(function () {
-                $('#owl-demo4 .owl-item').each(function () {
-                    if ($(this).outerHeight() > h || h == 0) h = $(this).outerHeight();
-                });
-                $('#owl-demo4 .owl-item').height(h);
-            });
-            // var abc = 1;
-            // for (i = 0; i < $('.height-css').length; i++) {
-            //     if (abc < $('.height-css').height()){
-            //         abc = $('.height-css').height()
-            //     }
-            //     $('.height-css').height = abc +'px'
-            // }
-        });
-    })
-    //Home Sections fit screen
-
-    /*global $:false */
-    $(function () {
-        "use strict";
-        $('.tp-banner').css({'height': ($(window).width()) / 1.5 + 'px'});
-        $(window).resize(function () {
-            $('.tp-banner').css({'height': ($(window).width() / 1.5) + 'px'});
-        });
-    });
-    $(function () {
-        "use strict";
-        $('.box-introductions').css({'height': ($('.tp-banner').width()) / 4 + 'px'});
-        $(window).resize(function () {
-            $('.box-introductions').css({'height': ($('.tp-banner').width() / 4) + 'px'});
-        });
-        $('.box-introductions').css({'width': ($('.tp-banner').width()) / 3 + 'px'});
-        $(window).resize(function () {
-            $('.box-introductions').css({'width': ($('.tp-banner').width() / 3) + 'px'});
-        });
-    });
-    $(function () {
-        "use strict";
-        $('.box-introductions h1').css({'font-size': ($('.box-introductions').width()) / 10 + 'px'});
-        $(window).resize(function () {
-            $('.box-introductions h1').css({'font-size': ($('.box-introductions').width()) / 10 + 'px'});
-        });
-        $('.box-introductions h4').css({'font-size': ($('.box-introductions').width()) / 13 + 'px'});
-        $(window).resize(function () {
-            $('.box-introductions h4').css({'font-size': ($('.box-introductions').width()) / 13 + 'px'});
-        });
-        $('.box-introductions p').css({'font-size': ($('.box-introductions').width()) / 17 + 'px'});
-        $(window).resize(function () {
-            $('.box-introductions p').css({'font-size': ($('.box-introductions').width()) / 17 + 'px'});
-        });
-    });
-    $(function () {
-        "use strict";
-        $('.box-introductions button').css({
-            'height': ($('.box-introductions').width()) / 7 + 'px',
-            'font-size': ($('.box-introductions').width()) / 17 + 'px'
-        });
-        $(window).resize(function () {
-            $('.box-introductions button').css({
-                'height': ($('.box-introductions').width() / 7) + 'px',
-                'font-size': ($('.box-introductions').width()) / 17 + 'px'
-            });
-        });
-        $('.box-introductions button').css({'width': ($('.box-introductions').width()) / 2 + 'px'});
-        $(window).resize(function () {
-            $('.box-introductions button').css({'width': ($('.box-introductions').width() / 2) + 'px'});
-        });
-    });
-    $(function () {
-        "use strict";
-        $('.tp-banner-container').css({'height': ($(window).width()) / 2 + 'px'});
-        $(window).resize(function () {
-            $('.tp-banner-container').css({'height': ($(window).width() / 2) + 'px'});
-        });
-
-    });
-    // $(function () {
-    //     "use strict";
-    //     $('.welcome-serv-img iframe').css({ 'width': ($('.welcome-serv-img').width()) + 'px' ,'height': ($('.welcome-serv-img').width()/1.5) + 'px'});
-    //     $(window).resize(function () {
-    //         $('.welcome-serv-img iframe').css({ 'width': ($('.welcome-serv-img').width()) + 'px' ,'height': ($('.welcome-serv-img').width()/1.5) + 'px'});
-    //     });
-
-    // });
-</script>
-
-
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/third_party/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/third_party/owl-carousel/owl.carousel.min.js"></script>
+    <script src="./assets/js/lozad.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
-
 </html>
